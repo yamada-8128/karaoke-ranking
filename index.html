@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カラオケ最高音ランキング</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=M+PLUS+1p:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>🎤 Karaoke Rank</h1>
+        <p>Highest Pitch Database</p>
+    </header>
+
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="曲名・アーティスト名で検索...">
+        </div>
+
+        <div class="tabs">
+            <button class="active">総合ランキング</button>
+        </div>
+
+        <div id="rankingList" class="ranking-list">
+            <div class="loading">データを読み込み中...</div>
+        </div>
+        
+        <div id="missingListContainer" class="missing-container" style="display:none;">
+            <h3>⚠️ データ未取得の曲</h3>
+            <ul id="missingList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
