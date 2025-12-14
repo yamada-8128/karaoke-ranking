@@ -6,7 +6,7 @@ function calculateScore(pitchText) {
     if (!pitchText || pitchText === "---") return -1;
     
     const prefixMap = {'low': 0, 'mid1': 12, 'mid2': 24, 'hi': 36, 'hihi': 48};
-    const noteOrder = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+    const noteOrder = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
     
     // 正規表現で分解 (例: hiA# -> prefix:hi, note:A#)
     const match = pitchText.match(/(low|mid1|mid2|hihi|hi)([A-G]#?)/);
