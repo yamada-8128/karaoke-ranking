@@ -331,7 +331,7 @@
     },
     "0T4AitQuq8IJhWBWuZwkFA": {
         "chest": "hiE",
-        "falsetto": "hiG#",
+        "falsetto": "hiF#",
         "name": "群青",
         "artist": "YOASOBI"
     },
@@ -749,4 +749,5 @@
         "name": "タイムパラドックス",
         "artist": "Vaundy"
     }
+
 }
