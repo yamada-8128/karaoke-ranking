@@ -1,120 +1,218 @@
-/* 全体の設定 */
+:root {
+    --primary-color: #1DB954; /* Spotify Green */
+    --accent-color: #535353;
+    --text-main: #FFFFFF;
+    --text-sub: #B3B3B3;
+    --card-bg: rgba(30, 30, 30, 0.6); /* 半透明 */
+    --card-border: rgba(255, 255, 255, 0.1);
+}
+
 body {
-    background-color: #121212; /* ダーク背景 */
-    color: #ffffff;
-    font-family: 'Inter', 'M PLUS 1p', sans-serif;
+    background-color: #121212;
+    color: var(--text-main);
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 背景のアニメーション */
+.background-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 10% 20%, rgba(29, 185, 84, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(80, 50, 200, 0.15) 0%, transparent 40%);
+    z-index: -1;
+    animation: moveBackground 20s infinite alternate;
+}
+
+@keyframes moveBackground {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
 }
 
 .container {
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 15px;
 }
 
+/* ヘッダー周り */
 header {
+    margin-bottom: 30px;
     text-align: center;
-    padding: 30px 20px;
-    background: linear-gradient(135deg, #1DB954 0%, #191414 100%);
 }
 
 header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
     margin: 0;
-    font-size: 1.8rem;
-}
-header p {
-    margin: 5px 0 0;
-    font-size: 0.9rem;
-    opacity: 0.8;
+    background: linear-gradient(90deg, #fff, #b3b3b3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* 検索ボックス */
+header p {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* 検索ボックス（モダン） */
+.search-box {
+    margin-top: 25px;
+    position: relative;
+    max-width: 100%;
+}
+
+.search-box svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-sub);
+    pointer-events: none;
+}
+
 .search-box input {
     width: 100%;
-    padding: 15px;
-    border-radius: 25px;
-    border: none;
-    background-color: #282828;
+    padding: 16px 16px 16px 45px;
+    border-radius: 16px;
+    border: 1px solid var(--card-border);
+    background: rgba(255, 255, 255, 0.08);
     color: #fff;
     font-size: 1rem;
-    box-sizing: border-box; /* 枠線を含める */
-    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
-/* ランキングカードのデザイン */
+.search-box input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.3);
+}
+
+/* カードデザイン（Glassmorphism） */
 .card {
-    background-color: #181818;
-    border-radius: 12px;
-    padding: 15px;
-    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transition: transform 0.1s;
+    background: var(--card-bg);
+    backdrop-filter: blur(12px); /* すりガラス効果 */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .card:active {
-    transform: scale(0.98); /* タップした時の動き */
+    transform: scale(0.97);
 }
 
 /* 順位 */
 .rank {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #1DB954; /* Spotify Green */
-    width: 50px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.15); /* 背景になじむ色 */
+    width: 40px;
     text-align: center;
-    flex-shrink: 0;
+    margin-right: 10px;
+    line-height: 1;
+    font-style: italic;
 }
+
+/* 上位3位の装飾 */
+.card:nth-child(1) .rank { color: #FFD700; text-shadow: 0 0 10px rgba(255,215,0,0.5); }
+.card:nth-child(2) .rank { color: #C0C0C0; }
+.card:nth-child(3) .rank { color: #CD7F32; }
 
 /* 曲情報 */
 .info {
     flex-grow: 1;
-    padding: 0 10px;
     overflow: hidden;
+    margin-right: 10px;
 }
 
 .title {
-    font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 4px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* 長すぎるタイトルは...にする */
+    text-overflow: ellipsis;
 }
 
 .artist {
     font-size: 0.85rem;
-    color: #b3b3b3;
+    color: var(--text-sub);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* 最高音バッジ */
+/* 音域バッジ */
 .pitch-badge {
-    background-color: #333;
-    padding: 8px 12px;
-    border-radius: 8px;
+    background: rgba(29, 185, 84, 0.15);
+    border: 1px solid rgba(29, 185, 84, 0.3);
+    border-radius: 12px;
+    padding: 8px 0;
+    width: 65px;
     text-align: center;
-    min-width: 60px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .pitch-val {
-    display: block;
-    font-weight: bold;
     font-size: 1.1rem;
-    color: #fff;
+    font-weight: 800;
+    color: var(--primary-color);
+    line-height: 1.1;
 }
 
 .pitch-type {
-    display: block;
-    font-size: 0.7rem;
-    color: #888;
+    font-size: 0.6rem;
+    color: var(--text-sub);
+    margin-top: 2px;
+    font-weight: 600;
 }
 
 /* データなしエリア */
-.missing-container {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    color: #888;
+.missing-section {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px dashed var(--card-border);
+    color: var(--text-sub);
+}
+
+.missing-section h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.missing-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.missing-section li {
+    font-size: 0.9rem;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
