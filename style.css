@@ -70,10 +70,13 @@ header p {
 /* 検索ボックス調整 */
 .search-box {
     margin-top: 25px;
-    position: relative; /* ボタン配置の基準 */
+    position: relative;
+    width: 100%; /* 幅を親要素いっぱいに */
     max-width: 100%;
+    box-sizing: border-box; /* 枠線を含めたサイズ計算にする */
 }
 
+/* 虫眼鏡アイコン */
 .search-icon {
     position: absolute;
     left: 15px;
@@ -81,33 +84,57 @@ header p {
     transform: translateY(-50%);
     color: var(--text-sub);
     pointer-events: none;
+    z-index: 2; /* 入力欄より上に表示 */
 }
 
+/* 入力欄（ここを修正） */
 .search-box input {
     width: 100%;
-    padding: 16px 45px 16px 45px; /* 右側もボタン用に空ける */
-    /* (その他のスタイルはそのまま) */
+    /* ★iPhoneで拡大されないための重要な設定★ */
+    font-size: 16px; 
+    
+    /* デザインをモダンなダークに戻す */
+    background: rgba(255, 255, 255, 0.08); /* 半透明の黒 */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px); /* すりガラス効果 */
+    color: #fff;
+    
+    padding: 16px 45px 16px 45px; /* アイコンと×ボタンの分を空ける */
+    border-radius: 16px;
+    box-sizing: border-box; /* はみ出し防止 */
+    outline: none;
+    transition: all 0.3s ease;
+    
+    /* iPhone特有の丸みや影をリセット */
+    -webkit-appearance: none;
+    appearance: none;
 }
 
-/* ★クリアボタンのスタイル */
+/* 入力時のフォーカスデザイン */
+.search-box input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.3);
+}
+
+/* ×ボタン（クリアボタン） */
 .clear-btn {
     position: absolute;
-    right: 15px;
+    right: 5px; /* 位置調整 */
     top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
     color: var(--text-sub);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
-    padding: 0;
+    padding: 10px; /* タップしやすいように余白を確保 */
     line-height: 1;
-    width: 24px;
-    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: color 0.2s;
+    z-index: 2;
 }
 
 .clear-btn:hover {
@@ -127,12 +154,6 @@ header p {
     flex-shrink: 0; /* ★縮まないようにする */
 }
 /* (後略) */
-
-.search-box input:focus {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: var(--primary-color);
-    box-shadow: 0 0 15px rgba(29, 185, 84, 0.3);
-}
 
 /* カードデザイン（Glassmorphism） */
 .card {
