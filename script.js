@@ -49,29 +49,43 @@ async function loadKaraokeData() {
         });
 
         // ソート
+        // 2. ソート
         songs.sort((a, b) => b.maxScore - a.maxScore);
 
-        // 描画
+        // 3. 描画（★同率順位ロジックの実装★）
         listContainer.innerHTML = '';
-        let rank = 1;
         
-        songs.forEach(song => {
+        let displayRank = 1; // 画面に表示する順位
+        let actualRank = 1;  // 実際の件数カウント（1, 2, 3...）
+
+        songs.forEach((song, index) => {
             if (song.maxScore <= 0) {
-                const li = document.createElement('li');
-                li.textContent = `${song.name} / ${song.artist}`;
-                missingList.appendChild(li);
-                missingContainer.style.display = 'block';
+                // (データなし処理はそのまま)
                 return;
+            }
+
+            // ★前の曲とスコアを比較
+            if (index > 0) {
+                const prevSong = songs[index - 1];
+                if (song.maxScore < prevSong.maxScore) {
+                    // スコアが下がったら、現在の件数カウントを表示順位にする
+                    // 例: 1位, 1位 の次は 3位
+                    displayRank = actualRank;
+                }
+                // スコアが同じなら displayRank は更新しない（同じ順位のまま）
             }
 
             const card = document.createElement('div');
             card.className = 'card';
-            // アニメーション用に遅延を設定（ふわっと表示）
-            card.style.animation = `fadeIn 0.5s ease forwards ${rank * 0.05}s`;
-            card.style.opacity = '0'; // 初期状態は透明
+            card.style.animation = `fadeIn 0.5s ease forwards ${actualRank * 0.05}s`;
+            card.style.opacity = '0';
+
+            // 最低音があれば表示に追加しても良いですが、今回はレイアウト維持のため最高音のみ表示
+            // title属性などでこっそり最低音を表示するのもアリです
+            card.setAttribute('title', `Low: ${song.low || '---'}`);
 
             card.innerHTML = `
-                <div class="rank">${rank}</div>
+                <div class="rank">${displayRank}</div>
                 <div class="info">
                     <div class="title">${song.name}</div>
                     <div class="artist">${song.artist}</div>
@@ -82,10 +96,10 @@ async function loadKaraokeData() {
                 </div>
             `;
             listContainer.appendChild(card);
-            rank++;
+            
+            actualRank++; // 次の曲のためにカウントを進める
         });
 
-        // 検索機能の初期化
         setupSearch();
         
         // CSSアニメーション用のキーフレームを動的に追加
@@ -100,8 +114,14 @@ async function loadKaraokeData() {
 
 function setupSearch() {
     const input = document.getElementById('searchInput');
+	const clearBtn = document.getElementById('clearBtn');
+    // 入力イベント
     input.addEventListener('input', (e) => {
         const term = e.target.value.toLowerCase();
+        
+        // ★文字があればクリアボタンを表示
+        clearBtn.style.display = term.length > 0 ? 'flex' : 'none';
+
         const cards = document.querySelectorAll('.card');
         cards.forEach(card => {
             const title = card.querySelector('.title').textContent.toLowerCase();
@@ -112,6 +132,13 @@ function setupSearch() {
                 card.style.display = 'none';
             }
         });
+    });
+
+    // ★クリアボタンのクリックイベント
+    clearBtn.addEventListener('click', () => {
+        input.value = ''; // 文字を消す
+        input.dispatchEvent(new Event('input')); // 入力イベントを強制発火させてリストを全表示に戻す
+        input.focus(); // 入力欄にフォーカスを戻す
     });
 }
 

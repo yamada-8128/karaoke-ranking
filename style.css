@@ -67,13 +67,14 @@ header p {
 }
 
 /* 検索ボックス（モダン） */
+/* 検索ボックス調整 */
 .search-box {
     margin-top: 25px;
-    position: relative;
+    position: relative; /* ボタン配置の基準 */
     max-width: 100%;
 }
 
-.search-box svg {
+.search-icon {
     position: absolute;
     left: 15px;
     top: 50%;
@@ -84,17 +85,48 @@ header p {
 
 .search-box input {
     width: 100%;
-    padding: 16px 16px 16px 45px;
-    border-radius: 16px;
-    border: 1px solid var(--card-border);
-    background: rgba(255, 255, 255, 0.08);
-    color: #fff;
-    font-size: 1rem;
-    box-sizing: border-box;
-    outline: none;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
+    padding: 16px 45px 16px 45px; /* 右側もボタン用に空ける */
+    /* (その他のスタイルはそのまま) */
 }
+
+/* ★クリアボタンのスタイル */
+.clear-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-sub);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.clear-btn:hover {
+    color: #fff;
+}
+
+/* ★順位（3桁対応） */
+.rank {
+    font-size: 1.5rem; /* 少し小さくして3桁入るように */
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.15);
+    min-width: 60px; /* ★幅を固定して確保 */
+    text-align: center;
+    margin-right: 10px;
+    line-height: 1;
+    font-style: italic;
+    flex-shrink: 0; /* ★縮まないようにする */
+}
+/* (後略) */
 
 .search-box input:focus {
     background: rgba(255, 255, 255, 0.15);
