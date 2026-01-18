@@ -48,6 +48,48 @@
             </div>
         </main>
     </div>
+	<div id="songModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <div class="modal-header">
+                <h2 id="modalTitle">Song Title</h2>
+                <p id="modalArtist">Artist Name</p>
+                <span id="modalDuration" class="duration-badge">0:00</span>
+            </div>
+
+            <div class="modal-body">
+                <div class="pitch-grid">
+                    <div class="pitch-item">
+                        <span class="label">地声最高</span>
+                        <span class="value" id="modalChest">---</span>
+                    </div>
+                    <div class="pitch-item">
+                        <span class="label">裏声最高</span>
+                        <span class="value" id="modalFalsetto">---</span>
+                    </div>
+                    <div class="pitch-item">
+                        <span class="label">地声最低</span>
+                        <span class="value" id="modalLow">---</span>
+                    </div>
+                </div>
+
+                <div class="visualizer-container">
+                    <p class="visualizer-label">音域レンジ (lowG - hihiA)</p>
+                    <div class="range-track">
+                        <div id="rangeBar" class="range-bar"></div>
+                    </div>
+                    <div class="range-labels">
+                        <span>low</span>
+                        <span>mid1</span>
+                        <span>mid2</span>
+                        <span>hi</span>
+                        <span>hihi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         const script = document.createElement("script");

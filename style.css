@@ -269,3 +269,142 @@ header p {
     padding: 8px 0;
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
+
+/* --- モーダル（詳細画面）のデザイン --- */
+.modal {
+    display: none; /* 初期状態は非表示 */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* 背景を暗く */
+    backdrop-filter: blur(5px); /* 背景ぼかし */
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.2s ease;
+}
+
+.modal-content {
+    background: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+    transform: scale(0.95);
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes popIn {
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#modalTitle {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+#modalArtist {
+    margin: 5px 0 10px;
+    color: var(--text-sub);
+}
+
+.duration-badge {
+    background: rgba(255,255,255,0.1);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+/* 3つの音域データ並び */
+.pitch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.pitch-item {
+    background: rgba(255,255,255,0.05);
+    padding: 10px 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pitch-item .label {
+    display: block;
+    font-size: 0.7rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.pitch-item .value {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* 音域視覚化バー */
+.visualizer-container {
+    margin-top: 10px;
+}
+
+.visualizer-label {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.range-track {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    background: #333;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.range-bar {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(90deg, #1DB954, #1ed760);
+    border-radius: 6px;
+    /* JSで left と width を指定します */
+    width: 0%; 
+    left: 0%;
+    transition: width 1s ease, left 1s ease;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    color: #555;
+    margin-top: 5px;
+}

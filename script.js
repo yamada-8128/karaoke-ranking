@@ -59,46 +59,37 @@ async function loadKaraokeData() {
         let actualRank = 1;  // 実際の件数カウント（1, 2, 3...）
 
         songs.forEach((song, index) => {
-            if (song.maxScore <= 0) {
-                // (データなし処理はそのまま)
-                return;
-            }
+        if (song.maxScore <= 0) return; // データなしはスキップ
 
-            // ★前の曲とスコアを比較
-            if (index > 0) {
-                const prevSong = songs[index - 1];
-                if (song.maxScore < prevSong.maxScore) {
-                    // スコアが下がったら、現在の件数カウントを表示順位にする
-                    // 例: 1位, 1位 の次は 3位
-                    displayRank = actualRank;
-                }
-                // スコアが同じなら displayRank は更新しない（同じ順位のまま）
-            }
+        // (同率順位ロジックなどはそのまま...)
+        if (index > 0) {
+             const prevSong = songs[index - 1];
+             if (song.maxScore < prevSong.maxScore) displayRank = actualRank;
+        }
 
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.style.animation = `fadeIn 0.5s ease forwards ${actualRank * 0.05}s`;
-            card.style.opacity = '0';
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.style.animation = `fadeIn 0.5s ease forwards ${actualRank * 0.05}s`;
+        card.style.opacity = '0';
+        
+        // ★クリックイベントを追加！
+        card.addEventListener('click', () => openModal(song));
+        card.style.cursor = "pointer"; // クリックできる感すソルにする
 
-            // 最低音があれば表示に追加しても良いですが、今回はレイアウト維持のため最高音のみ表示
-            // title属性などでこっそり最低音を表示するのもアリです
-            card.setAttribute('title', `Low: ${song.low || '---'}`);
-
-            card.innerHTML = `
-                <div class="rank">${displayRank}</div>
-                <div class="info">
-                    <div class="title">${song.name}</div>
-                    <div class="artist">${song.artist}</div>
-                </div>
-                <div class="pitch-badge">
-                    <span class="pitch-val">${song.displayPitch}</span>
-                    <span class="pitch-type">${song.type}</span>
-                </div>
-            `;
-            listContainer.appendChild(card);
-            
-            actualRank++; // 次の曲のためにカウントを進める
-        });
+        card.innerHTML = `
+            <div class="rank">${displayRank}</div>
+            <div class="info">
+                <div class="title">${song.name}</div>
+                <div class="artist">${song.artist}</div>
+            </div>
+            <div class="pitch-badge">
+                <span class="pitch-val">${song.displayPitch}</span>
+                <span class="pitch-type">${song.type}</span>
+            </div>
+        `;
+        listContainer.appendChild(card);
+        actualRank++;
+    });
 
         setupSearch();
         
@@ -140,6 +131,73 @@ function setupSearch() {
         input.dispatchEvent(new Event('input')); // 入力イベントを強制発火させてリストを全表示に戻す
         input.focus(); // 入力欄にフォーカスを戻す
     });
+}
+
+// モーダル要素の取得
+const modal = document.getElementById("songModal");
+const closeBtn = document.querySelector(".close-btn");
+
+// 閉じるボタン
+closeBtn.onclick = () => modal.style.display = "none";
+// 外側クリックで閉じる
+window.onclick = (event) => {
+    if (event.target == modal) modal.style.display = "none";
+}
+
+function openModal(song) {
+    // テキスト情報をセット
+    document.getElementById("modalTitle").textContent = song.name;
+    document.getElementById("modalArtist").textContent = song.artist;
+    document.getElementById("modalDuration").textContent = song.duration || "--:--";
+    
+    document.getElementById("modalChest").textContent = song.chest;
+    document.getElementById("modalFalsetto").textContent = song.falsetto;
+    document.getElementById("modalLow").textContent = song.low || "---";
+
+    // --- 音域バーの計算 ---
+    // 基準：lowG(下限) ～ hihiC(上限) くらいを全体の幅(100%)とする
+    // 音階スコア: lowG=-5, mid1C=12, hiC=36, hihiC=60 くらい
+    
+    // スコア計算
+    const lowScore = calculateScore(song.low); // 最低音
+    const highScore = song.maxScore;           // 最高音(地声/裏声の高い方)
+
+    // データが不十分な場合のフォールバック
+    if (lowScore === -1 || highScore === -1) {
+        document.getElementById("rangeBar").style.width = "0%";
+        modal.style.display = "flex";
+        return;
+    }
+
+    // 表示用の全体スケール設定 (lowG ～ hihiC)
+    const scaleMin = -5; // lowGあたり
+    const scaleMax = 60; // hihiCあたり
+    const totalRange = scaleMax - scaleMin;
+
+    // 左端の位置 (%) = (曲の最低音 - スケール最低音) / 全体幅
+    let leftPercent = ((lowScore - scaleMin) / totalRange) * 100;
+    
+    // バーの長さ (%) = (曲の最高音 - 曲の最低音) / 全体幅
+    let widthPercent = ((highScore - lowScore) / totalRange) * 100;
+
+    // はみ出し防止
+    if (leftPercent < 0) leftPercent = 0;
+    if (leftPercent + widthPercent > 100) widthPercent = 100 - leftPercent;
+
+    // スタイル適用
+    const bar = document.getElementById("rangeBar");
+    bar.style.left = `${leftPercent}%`;
+    bar.style.width = `${widthPercent}%`;
+    
+    // 裏声が最高音の場合は色を変える演出（オプション）
+    if (song.type === "Falsetto") {
+        bar.style.background = "linear-gradient(90deg, #1DB954 60%, #4facfe 100%)"; // 青っぽく
+    } else {
+        bar.style.background = "linear-gradient(90deg, #1DB954, #1ed760)"; // 緑
+    }
+
+    // 表示
+    modal.style.display = "flex";
 }
 
 loadKaraokeData();
