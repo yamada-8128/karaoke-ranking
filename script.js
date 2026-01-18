@@ -155,8 +155,8 @@ function openModal(song) {
     document.getElementById("modalLow").textContent = song.low || "---";
 
     // --- 音域バーの計算 ---
-    // 基準：lowG(下限) ～ hihiC(上限) くらいを全体の幅(100%)とする
-    // 音階スコア: lowG=-5, mid1C=12, hiC=36, hihiC=60 くらい
+    // 基準：lowA(下限) ～ hihiA(上限) くらいを全体の幅(100%)とする
+    // 音階スコア: lowA=0, mid1C=12, hiC=36, hihiA=48 くらい
     
     // スコア計算
     const lowScore = calculateScore(song.low); // 最低音
@@ -170,8 +170,8 @@ function openModal(song) {
     }
 
     // 表示用の全体スケール設定 (lowG ～ hihiC)
-    const scaleMin = -5; // lowGあたり
-    const scaleMax = 60; // hihiCあたり
+    const scaleMin = 0; // lowAあたり
+    const scaleMax = 48; // hihiAあたり
     const totalRange = scaleMax - scaleMin;
 
     // 左端の位置 (%) = (曲の最低音 - スケール最低音) / 全体幅
