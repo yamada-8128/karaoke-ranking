@@ -272,18 +272,30 @@ header p {
 
 /* --- モーダル（詳細画面）のデザイン --- */
 .modal {
-    display: none; /* 初期状態は非表示 */
+    display: none;
     position: fixed;
-    z-index: 100;
-    left: 0;
+    z-index: 1000; /* 念のため数値を大きくしました */
+    
+    /* ★ここが修正ポイント */
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* 背景を暗く */
-    backdrop-filter: blur(5px); /* 背景ぼかし */
+    
+    /* 100%ではなく、100dvhを使うとスマホのメニューバー問題を回避できます */
+    height: 100dvh; 
+    
+    background-color: rgba(0, 0, 0, 0.75); /* 少し濃くしました */
+    backdrop-filter: blur(8px); /* ぼかしを少し強く */
+    -webkit-backdrop-filter: blur(8px); /* iPhone用 */
+    
     align-items: center;
     justify-content: center;
     animation: fadeIn 0.2s ease;
+    
+    /* モーダルが開いている時に後ろがスクロールするのを防ぐ設定(CSS版) */
+    overscroll-behavior: contain;
 }
 
 .modal-content {

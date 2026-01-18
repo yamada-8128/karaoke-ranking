@@ -137,12 +137,18 @@ function setupSearch() {
 const modal = document.getElementById("songModal");
 const closeBtn = document.querySelector(".close-btn");
 
-// 閉じるボタン
-closeBtn.onclick = () => modal.style.display = "none";
-// 外側クリックで閉じる
+// 閉じるボタンの処理
+closeBtn.onclick = () => {
+    modal.style.display = "none";
+    document.body.style.overflow = ''; // ★追加：スクロールロック解除
+};
+// 外側クリックで閉じる処理
 window.onclick = (event) => {
-    if (event.target == modal) modal.style.display = "none";
-}
+    if (event.target == modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = ''; // ★追加：スクロールロック解除
+    }
+};
 
 function openModal(song) {
     // テキスト情報をセット
@@ -198,6 +204,7 @@ function openModal(song) {
 
     // 表示
     modal.style.display = "flex";
+	document.body.style.overflow = 'hidden'; // ★追加：背景のスクロールを止める
 }
 
 loadKaraokeData();
