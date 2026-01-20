@@ -527,13 +527,6 @@
         "low": "mid1D",
         "duration": "3:50"
     },
-    "31rf3jLBMfnrqLuTPrcxM5": {
-        "chest": "mid2G#",
-        "falsetto": "---",
-        "name": "3月9日",
-        "artist": "Remioromen",
-        "low": "mid1C#"
-    },
     "1ihCiJaXRl4f6Sy4LJov5z": {
         "chest": "hiA",
         "falsetto": "---",
@@ -1086,4 +1079,5 @@
         "name": "粉雪",
         "duration": "5:21"
     }
+
 }
