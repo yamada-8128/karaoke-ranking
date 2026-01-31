@@ -419,7 +419,7 @@
         "chest": "hiD#",
         "falsetto": "---",
         "name": "アスノヨゾラ哨戒班",
-        "artist": "ゆある",
+        "artist": "*Luna",
         "low": "mid1C#",
         "duration": "2:59"
     },
@@ -531,7 +531,7 @@
         "chest": "hiA",
         "falsetto": "---",
         "name": "チェリー",
-        "artist": "スピッツ",
+        "artist": "SPITZ",
         "low": "mid1E",
         "duration": "4:19"
     },
@@ -555,7 +555,7 @@
         "chest": "hiA#",
         "falsetto": "---",
         "name": "新宝島",
-        "artist": "サカナクション",
+        "artist": "sakanaction",
         "low": "mid1F",
         "duration": "5:02"
     },
@@ -627,7 +627,7 @@
         "chest": "hiC#",
         "falsetto": "hiF",
         "name": "Mela!",
-        "artist": "緑黄色社会",
+        "artist": "Ryokuoushoku Shakai",
         "low": "mid1G#",
         "duration": "4:02"
     },
@@ -643,7 +643,7 @@
         "chest": "hiD",
         "falsetto": "hiD#",
         "name": "花になって - Be a flower",
-        "artist": "緑黄色社会",
+        "artist": "Ryokuoushoku Shakai",
         "low": "mid2A",
         "duration": "3:20"
     },
@@ -747,7 +747,7 @@
         "chest": "hiA#",
         "falsetto": "hiB",
         "name": "怪獣",
-        "artist": "サカナクション",
+        "artist": "sakanaction",
         "low": "mid1F#",
         "duration": "4:12"
     },
@@ -843,7 +843,7 @@
         "chest": "mid2G",
         "falsetto": "hiA",
         "name": "ノンフィクション",
-        "artist": "平井 堅",
+        "artist": "Ken Hirai",
         "low": "mid1A",
         "duration": "4:31"
     },
@@ -867,7 +867,7 @@
         "chest": "mid2F#",
         "falsetto": "hiA",
         "name": "恋",
-        "artist": "Zion.T & 星野源",
+        "artist": "Gen Hoshino",
         "low": "mid1E",
         "duration": "4:13"
     },
@@ -915,7 +915,7 @@
         "chest": "hiA#",
         "falsetto": "hiC#",
         "name": "青のすみか",
-        "artist": "キタニタツヤ",
+        "artist": "Tatsuya Kitani",
         "low": "lowG#",
         "duration": "3:16"
     },
@@ -947,7 +947,7 @@
         "chest": "hiA",
         "falsetto": "---",
         "name": "空も飛べるはず",
-        "artist": "スピッツ",
+        "artist": "SPITZ",
         "low": "mid1G",
         "duration": "4:31"
     },
@@ -1020,7 +1020,7 @@
         "falsetto": "hiB",
         "low": "mid1A",
         "name": "きらり",
-        "artist": "藤井 風",
+        "artist": "Fujii Kaze",
         "duration": "3:47"
     },
     "5W7Y92LB4jWvu9NeEQ0GZl": {
@@ -1078,6 +1078,53 @@
         "artist": "レミオロメン",
         "name": "粉雪",
         "duration": "5:21"
+    },
+    "6vg9UGXRVL4YKNVqVMmOKF": {
+        "chest": "mid2F#",
+        "falsetto": "hiA",
+        "low": "mid1E",
+        "artist": "RADWIMPS",
+        "name": "正解",
+        "duration": "5:58"
+    },
+    "7sO2NML7SulscK8RR27uUf": {
+        "chest": "hiB",
+        "falsetto": "hiF#",
+        "low": "mid1A#",
+        "artist": "Mrs. GREEN APPLE",
+        "name": "天国",
+        "duration": "5:23"
+    },
+    "2tlOVDJ3lQsUxz22vPJ4c4": {
+        "chest": "hihiD#",
+        "falsetto": "hihiC",
+        "low": "mid1A#",
+        "artist": "Ado",
+        "name": "唱",
+        "duration": "3:09"
+    },
+    "1oFqKeepmT5S8BCGqJl7Ar": {
+        "chest": "---",
+        "falsetto": "---",
+        "low": "---",
+        "artist": "AiNA THE END",
+        "name": "革命道中 - On The Way",
+        "duration": "3:17"
+    },
+    "6glcoO077gTGhgdVI9X5wA": {
+        "chest": "hiA#",
+        "falsetto": "hiB",
+        "low": "mid1C",
+        "artist": "マカロニえんぴつ",
+        "name": "ミスター・ブルースカイ",
+        "duration": "3:53"
+    },
+    "6IEqiEgTQn4FwE0seKXFZO": {
+        "chest": "mid2G#",
+        "falsetto": "hiC",
+        "low": "mid1D",
+        "artist": "sumika",
+        "name": "Lovers",
+        "duration": "4:10"
     }
-
 }
