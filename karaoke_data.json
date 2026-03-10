@@ -419,7 +419,7 @@
         "chest": "hiD#",
         "falsetto": "---",
         "name": "アスノヨゾラ哨戒班",
-        "artist": "*Luna",
+        "artist": "ゆある",
         "low": "mid1C#",
         "duration": "2:59"
     },
@@ -531,7 +531,7 @@
         "chest": "hiA",
         "falsetto": "---",
         "name": "チェリー",
-        "artist": "SPITZ",
+        "artist": "スピッツ",
         "low": "mid1E",
         "duration": "4:19"
     },
@@ -555,7 +555,7 @@
         "chest": "hiA#",
         "falsetto": "---",
         "name": "新宝島",
-        "artist": "sakanaction",
+        "artist": "サカナクション",
         "low": "mid1F",
         "duration": "5:02"
     },
@@ -627,7 +627,7 @@
         "chest": "hiC#",
         "falsetto": "hiF",
         "name": "Mela!",
-        "artist": "Ryokuoushoku Shakai",
+        "artist": "緑黄色社会",
         "low": "mid1G#",
         "duration": "4:02"
     },
@@ -643,7 +643,7 @@
         "chest": "hiD",
         "falsetto": "hiD#",
         "name": "花になって - Be a flower",
-        "artist": "Ryokuoushoku Shakai",
+        "artist": "緑黄色社会",
         "low": "mid2A",
         "duration": "3:20"
     },
@@ -747,7 +747,7 @@
         "chest": "hiA#",
         "falsetto": "hiB",
         "name": "怪獣",
-        "artist": "sakanaction",
+        "artist": "サカナクション",
         "low": "mid1F#",
         "duration": "4:12"
     },
@@ -795,7 +795,7 @@
         "chest": "hiA",
         "falsetto": "hiC",
         "name": "ブルーベリー・ナイツ",
-        "artist": "マカロニえんぴつ",
+        "artist": "Macaroni Empitsu",
         "low": "mid1C",
         "duration": "4:04"
     },
@@ -803,7 +803,7 @@
         "chest": "hiA#",
         "falsetto": "hiC#",
         "name": "恋人ごっこ",
-        "artist": "マカロニえんぴつ",
+        "artist": "Macaroni Empitsu",
         "low": "mid1F",
         "duration": "3:20"
     },
@@ -843,7 +843,7 @@
         "chest": "mid2G",
         "falsetto": "hiA",
         "name": "ノンフィクション",
-        "artist": "Ken Hirai",
+        "artist": "平井 堅",
         "low": "mid1A",
         "duration": "4:31"
     },
@@ -859,7 +859,7 @@
         "chest": "hiB",
         "falsetto": "---",
         "name": "ヤングアダルト",
-        "artist": "マカロニえんぴつ",
+        "artist": "Macaroni Empitsu",
         "low": "mid1C",
         "duration": "4:18"
     },
@@ -899,7 +899,7 @@
         "chest": "hiC",
         "falsetto": "hiG",
         "name": "unravel",
-        "artist": "TK from 凛として時雨",
+        "artist": "TK from Ling tosite sigure",
         "low": "mid1A",
         "duration": "3:58"
     },
@@ -915,7 +915,7 @@
         "chest": "hiA#",
         "falsetto": "hiC#",
         "name": "青のすみか",
-        "artist": "Tatsuya Kitani",
+        "artist": "キタニタツヤ",
         "low": "lowG#",
         "duration": "3:16"
     },
@@ -947,7 +947,7 @@
         "chest": "hiA",
         "falsetto": "---",
         "name": "空も飛べるはず",
-        "artist": "SPITZ",
+        "artist": "スピッツ",
         "low": "mid1G",
         "duration": "4:31"
     },
@@ -1028,7 +1028,7 @@
         "falsetto": "---",
         "low": "mid1B",
         "name": "なんでもないよ、",
-        "artist": "マカロニえんぴつ",
+        "artist": "Macaroni Empitsu",
         "duration": "3:39"
     },
     "1sIIlVrnPhrvmTrHtzM7tV": {
@@ -1107,7 +1107,7 @@
         "chest": "---",
         "falsetto": "---",
         "low": "---",
-        "artist": "AiNA THE END",
+        "artist": "アイナ・ジ・エンド",
         "name": "革命道中 - On The Way",
         "duration": "3:17"
     },
@@ -1115,7 +1115,7 @@
         "chest": "hiA#",
         "falsetto": "hiB",
         "low": "mid1C",
-        "artist": "マカロニえんぴつ",
+        "artist": "Macaroni Empitsu",
         "name": "ミスター・ブルースカイ",
         "duration": "3:53"
     },
@@ -1126,5 +1126,117 @@
         "artist": "sumika",
         "name": "Lovers",
         "duration": "4:10"
+    },
+    "5YP52gnoypy9H1jg5RIwUW": {
+        "chest": "hiB",
+        "falsetto": "hiC#",
+        "low": "mid1F#",
+        "artist": "スピッツ",
+        "name": "ロビンソン",
+        "duration": "4:21"
+    },
+    "3Tw2WaAaeRj0YKtTUogJVz": {
+        "chest": "hiC#",
+        "falsetto": "---",
+        "low": "mid2A",
+        "artist": "AKB48",
+        "name": "恋するフォーチュンクッキー",
+        "duration": "4:44"
+    },
+    "5a9awnr002AVXUSVu2CC46": {
+        "chest": "hiA",
+        "falsetto": "---",
+        "low": "mid1D",
+        "artist": "Macaroni Empitsu",
+        "name": "レモンパイ",
+        "duration": "3:37"
+    },
+    "1BMYkyKXS6UfnJteWN7nSD": {
+        "chest": "hiC",
+        "falsetto": "---",
+        "low": "mid1G",
+        "artist": "Tsuji Ayano",
+        "name": "風になる",
+        "duration": "4:36"
+    },
+    "4NmzMLuyfuF9UpzjbhSiwl": {
+        "chest": "hiC",
+        "falsetto": "hiG",
+        "low": "mid1D",
+        "artist": "いきものがかり",
+        "name": "YELL",
+        "duration": "5:56"
+    },
+    "0vE1WglBbhmd5wDO49lcih": {
+        "chest": "hiC",
+        "falsetto": "hiF",
+        "low": "mid1B",
+        "artist": "Mrs. GREEN APPLE",
+        "name": "lulu.",
+        "duration": "4:30"
+    },
+    "19kF4PkH9RmZlMSEOhSgdQ": {
+        "chest": "hiC#",
+        "falsetto": "hiE",
+        "low": "mid1D#",
+        "artist": "Mrs. GREEN APPLE",
+        "name": "lovin'",
+        "duration": "2:35"
+    },
+    "4ER5mnbHqsvggEcoVMdFSk": {
+        "chest": "hiA#",
+        "falsetto": "hiE",
+        "low": "mid1D#",
+        "artist": "Mrs. GREEN APPLE",
+        "name": "ANTENNA",
+        "duration": "4:30"
+    },
+    "7HneEBTvTra2CRYsxgMOAi": {
+        "chest": "hiE",
+        "falsetto": "hiE",
+        "low": "mid1G",
+        "artist": "YOASOBI",
+        "name": "ハルジオン",
+        "duration": "3:18"
+    },
+    "06XQvnJb53SUYmlWIhUXUi": {
+        "chest": "hiD#",
+        "falsetto": "hiF",
+        "low": "mid1F#",
+        "artist": "YOASOBI",
+        "name": "怪物",
+        "duration": "3:26"
+    },
+    "0JAQpusQK6R7w07s0UgcU3": {
+        "chest": "mid2G#",
+        "falsetto": "hiC",
+        "low": "mid1C",
+        "artist": "平井 堅",
+        "name": "瞳をとじて",
+        "duration": "5:43"
+    },
+    "5tuj09zUnvIb7KEsUpWWfq": {
+        "chest": "mid2G",
+        "falsetto": "hihiA",
+        "low": "mid1G",
+        "artist": "大森元貴",
+        "name": "French",
+        "duration": "3:28"
+    },
+    "00Q3uYmFKFVYTRjbsnUq7H": {
+        "chest": "hiB",
+        "falsetto": "hiD#",
+        "low": "mid1A#",
+        "artist": "Da-iCE",
+        "name": "I wonder",
+        "duration": "2:37"
+    },
+    "5iF0Yf9gju6ERpAch08JsC": {
+        "chest": "hiB",
+        "falsetto": "hiF#",
+        "low": "mid1A#",
+        "artist": "King Gnu",
+        "name": "白日",
+        "duration": "4:34"
     }
 }
