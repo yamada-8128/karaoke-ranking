@@ -619,7 +619,7 @@
         "chest": "hiA",
         "falsetto": "---",
         "name": "灰色と青 ( + 菅田将暉 )",
-        "artist": "米津玄師",
+        "artist": "米津玄師;菅田 将暉",
         "low": "mid1B",
         "duration": "5:32"
     },
@@ -659,7 +659,7 @@
         "chest": "hiC",
         "falsetto": "hiC",
         "name": "絆ノ奇跡",
-        "artist": "MAN WITH A MISSION & milet",
+        "artist": "Bad Religion",
         "low": "mid1F",
         "duration": "3:43"
     },
@@ -795,7 +795,7 @@
         "chest": "hiA",
         "falsetto": "hiC",
         "name": "ブルーベリー・ナイツ",
-        "artist": "Macaroni Empitsu",
+        "artist": "マカロニえんぴつ",
         "low": "mid1C",
         "duration": "4:04"
     },
@@ -803,7 +803,7 @@
         "chest": "hiA#",
         "falsetto": "hiC#",
         "name": "恋人ごっこ",
-        "artist": "Macaroni Empitsu",
+        "artist": "マカロニえんぴつ",
         "low": "mid1F",
         "duration": "3:20"
     },
@@ -843,7 +843,7 @@
         "chest": "mid2G",
         "falsetto": "hiA",
         "name": "ノンフィクション",
-        "artist": "平井 堅",
+        "artist": "平井堅",
         "low": "mid1A",
         "duration": "4:31"
     },
@@ -859,7 +859,7 @@
         "chest": "hiB",
         "falsetto": "---",
         "name": "ヤングアダルト",
-        "artist": "Macaroni Empitsu",
+        "artist": "マカロニえんぴつ",
         "low": "mid1C",
         "duration": "4:18"
     },
@@ -867,7 +867,7 @@
         "chest": "mid2F#",
         "falsetto": "hiA",
         "name": "恋",
-        "artist": "Gen Hoshino",
+        "artist": "星野 源",
         "low": "mid1E",
         "duration": "4:13"
     },
@@ -899,7 +899,7 @@
         "chest": "hiC",
         "falsetto": "hiG",
         "name": "unravel",
-        "artist": "TK from Ling tosite sigure",
+        "artist": "TK from 凛として時雨",
         "low": "mid1A",
         "duration": "3:58"
     },
@@ -1020,7 +1020,7 @@
         "falsetto": "hiB",
         "low": "mid1A",
         "name": "きらり",
-        "artist": "Fujii Kaze",
+        "artist": "藤井 風",
         "duration": "3:47"
     },
     "5W7Y92LB4jWvu9NeEQ0GZl": {
@@ -1028,7 +1028,7 @@
         "falsetto": "---",
         "low": "mid1B",
         "name": "なんでもないよ、",
-        "artist": "Macaroni Empitsu",
+        "artist": "マカロニえんぴつ",
         "duration": "3:39"
     },
     "1sIIlVrnPhrvmTrHtzM7tV": {
@@ -1036,7 +1036,7 @@
         "falsetto": "hiG",
         "low": "mid2A",
         "name": "点描の唄",
-        "artist": "Mrs. GREEN APPLE",
+        "artist": "Mrs. GREEN APPLE;井上苑子",
         "duration": "5:07"
     },
     "0csHMdBheTvp9Oay1hM1WF": {
@@ -1115,7 +1115,7 @@
         "chest": "hiA#",
         "falsetto": "hiB",
         "low": "mid1C",
-        "artist": "Macaroni Empitsu",
+        "artist": "マカロニえんぴつ",
         "name": "ミスター・ブルースカイ",
         "duration": "3:53"
     },
@@ -1147,7 +1147,7 @@
         "chest": "hiA",
         "falsetto": "---",
         "low": "mid1D",
-        "artist": "Macaroni Empitsu",
+        "artist": "マカロニえんぴつ",
         "name": "レモンパイ",
         "duration": "3:37"
     },
@@ -1155,14 +1155,14 @@
         "chest": "hiC",
         "falsetto": "---",
         "low": "mid1G",
-        "artist": "Tsuji Ayano",
+        "artist": "つじあやの",
         "name": "風になる",
         "duration": "4:36"
     },
     "4NmzMLuyfuF9UpzjbhSiwl": {
         "chest": "hiC",
-        "falsetto": "hiG",
-        "low": "mid1D",
+        "falsetto": "---",
+        "low": "mid1F",
         "artist": "いきものがかり",
         "name": "YELL",
         "duration": "5:56"
@@ -1211,7 +1211,7 @@
         "chest": "mid2G#",
         "falsetto": "hiC",
         "low": "mid1C",
-        "artist": "平井 堅",
+        "artist": "平井堅",
         "name": "瞳をとじて",
         "duration": "5:43"
     },
@@ -1238,5 +1238,93 @@
         "artist": "King Gnu",
         "name": "白日",
         "duration": "4:34"
+    },
+    "31rf3jLBMfnrqLuTPrcxM5": {
+        "chest": "mid2G",
+        "falsetto": "---",
+        "low": "mid1C",
+        "artist": "レミオロメン",
+        "name": "3月9日",
+        "duration": "4:25"
+    },
+    "1Vqs0lXeJafYZz2sxnfB3V": {
+        "chest": "hiC#",
+        "falsetto": "hiE",
+        "low": "mid1E",
+        "artist": "Saucy Dog",
+        "name": "シンデレラボーイ",
+        "duration": "3:54"
+    },
+    "0v3iUTe5rskRsxbUhboRlT": {
+        "chest": "hiC",
+        "falsetto": "hiE",
+        "low": "mid1D",
+        "artist": "Saucy Dog",
+        "name": "いつか",
+        "duration": "4:34"
+    },
+    "45LUKiex0D78VuhP3Oz6mG": {
+        "chest": "mid2F",
+        "falsetto": "hiF",
+        "low": "mid1A",
+        "artist": "女王蜂",
+        "name": "メフィスト",
+        "duration": "3:47"
+    },
+    "6LDd1eGJTtMi19cX7pYuYy": {
+        "chest": "mid2F#",
+        "falsetto": "---",
+        "low": "mid1B",
+        "artist": "コブクロ",
+        "name": "赤い糸",
+        "duration": "6:58"
+    },
+    "1XeOqgzh2fZhmgxnmyiIJ8": {
+        "chest": "hiG",
+        "falsetto": "hihiA",
+        "low": "mid1G",
+        "artist": "ずっと真夜中でいいのに。",
+        "name": "残機",
+        "duration": "3:50"
+    },
+    "3FUCuf498nFHJXFYR1V9Bd": {
+        "chest": "hiD",
+        "falsetto": "hiF#",
+        "low": "mid1F",
+        "artist": "YOASOBI",
+        "name": "三原色",
+        "duration": "3:44"
+    },
+    "2L2Lb5GjBpKHMSjmofiRnf": {
+        "chest": "hiA",
+        "falsetto": "hiD",
+        "low": "mid1A",
+        "artist": "Mrs. GREEN APPLE",
+        "name": "嘘じゃないよ",
+        "duration": "4:45"
+    },
+    "7sditHCsoFw3nHnjFv1BHV": {
+        "chest": "hiC",
+        "falsetto": "hiG",
+        "low": "lowG#",
+        "artist": "Mrs. GREEN APPLE",
+        "name": "ナハトムジーク",
+        "duration": "4:22"
+    },
+    "6k90ibcH1z8Mx9684nfuLW": {
+        "chest": "hiF",
+        "falsetto": "hihiA#",
+        "low": "mid2A#",
+        "artist": "ずっと真夜中でいいのに。",
+        "name": "お勉強しといてよ",
+        "duration": "4:40"
+    },
+    "2VIK6jaaKghS4QPHr6sAkv": {
+        "chest": "hiF",
+        "falsetto": "hiG",
+        "low": "mid2B",
+        "artist": "ずっと真夜中でいいのに。",
+        "name": "あいつら全員同窓会",
+        "duration": "4:14"
     }
 }
