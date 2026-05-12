@@ -420,3 +420,44 @@ header p {
     color: #555;
     margin-top: 5px;
 }
+
+/* --- BPMと音域バッジを並べるコンテナ --- */
+.badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* --- BPMバッジのデザイン --- */
+.bpm-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+}
+
+.bpm-label {
+    font-size: 0.6rem;
+    color: var(--text-sub);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.bpm-val {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.1;
+}
+
+/* 念のため、cardの透明化設定が残っていたら上書きする設定 */
+.card {
+    opacity: 1 !important; 
+    animation: none !important; /* 遅延アニメーションをオフにして爆速表示 */
+}

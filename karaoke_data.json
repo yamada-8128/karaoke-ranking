@@ -5,7 +5,8 @@
         "name": "マリーゴールド",
         "artist": "あいみょん",
         "low": "mid1F#",
-        "duration": "5:06"
+        "duration": "5:06",
+        "bpm": 106
     },
     "4Jv7U0JJpbQnOrjtDwDZTZ": {
         "chest": "hiC#",
@@ -13,7 +14,8 @@
         "name": "裸の心",
         "artist": "あいみょん",
         "low": "mid1F",
-        "duration": "4:56"
+        "duration": "4:56",
+        "bpm": 148
     },
     "1oNeSCt0CMekCyyLo06kFs": {
         "chest": "hiC#",
@@ -21,7 +23,8 @@
         "name": "ハルノヒ",
         "artist": "あいみょん",
         "low": "mid1E",
-        "duration": "5:26"
+        "duration": "5:26",
+        "bpm": 107
     },
     "4iBO3Jg6kSXZHw06db0ds3": {
         "chest": "hiD",
@@ -29,7 +32,8 @@
         "name": "愛の花",
         "artist": "あいみょん",
         "low": "mid1F",
-        "duration": "4:01"
+        "duration": "4:01",
+        "bpm": 170
     },
     "01IZAuQsBO00iLKFO9LsFf": {
         "chest": "hiD",
@@ -37,7 +41,8 @@
         "name": "君はロックを聴かない",
         "artist": "あいみょん",
         "low": "mid1F#",
-        "duration": "4:06"
+        "duration": "4:06",
+        "bpm": 100
     },
     "0N8Xztr4pBHJ7V0moJWhbO": {
         "chest": "hiC#",
@@ -45,7 +50,8 @@
         "name": "愛を伝えたいだとか",
         "artist": "あいみょん",
         "low": "mid1F",
-        "duration": "3:55"
+        "duration": "3:55",
+        "bpm": 100
     },
     "7lUaEsQVwvNEjaJNcvc1CN": {
         "chest": "hiA",
@@ -53,7 +59,8 @@
         "name": "サウダージ",
         "artist": "ポルノグラフィティ",
         "low": "mid2A",
-        "duration": "4:21"
+        "duration": "4:21",
+        "bpm": 120
     },
     "3Z5Q3Xd6ySZmoS1NOVm0r4": {
         "chest": "hiA",
@@ -61,7 +68,8 @@
         "name": "アゲハ蝶",
         "artist": "ポルノグラフィティ",
         "low": "mid2A",
-        "duration": "4:40"
+        "duration": "4:40",
+        "bpm": 116
     },
     "1c7alUM5wJn6O0rG3Gio7I": {
         "chest": "hiA",
@@ -69,7 +77,8 @@
         "name": "メリッサ",
         "artist": "ポルノグラフィティ",
         "low": "mid2A",
-        "duration": "4:34"
+        "duration": "4:34",
+        "bpm": 170
     },
     "7zmwTsFZs4ZOlO3A95VLIP": {
         "chest": "hiB",
@@ -77,7 +86,8 @@
         "name": "LiAR",
         "artist": "ポルノグラフィティ",
         "low": "mid1F#",
-        "duration": "4:08"
+        "duration": "4:08",
+        "bpm": 128
     },
     "6wow9d9i3AB2ltYCeBWFsY": {
         "chest": "hiA",
@@ -85,7 +95,8 @@
         "name": "アポロ",
         "artist": "ポルノグラフィティ",
         "low": "mid2A",
-        "duration": "4:19"
+        "duration": "4:19",
+        "bpm": 95
     },
     "4fMewVWtew1oB6d3E8x9pp": {
         "chest": "hiC",
@@ -93,7 +104,8 @@
         "name": "オトナブルー",
         "artist": "新しい学校のリーダーズ",
         "low": "mid2A#",
-        "duration": "3:05"
+        "duration": "3:05",
+        "bpm": 130
     },
     "0yeMceaGqfPNLWzflUg079": {
         "chest": "hiB",
@@ -101,7 +113,8 @@
         "name": "できっこないを　やらなくちゃ",
         "artist": "サンボマスター",
         "low": "mid1E",
-        "duration": "3:37"
+        "duration": "3:37",
+        "bpm": 140
     },
     "2Kpsws23Oqf0wFwPrzJnWA": {
         "chest": "hiF",
@@ -109,7 +122,8 @@
         "name": "正しくなれない",
         "artist": "ずっと真夜中でいいのに。",
         "low": "mid2A",
-        "duration": "4:01"
+        "duration": "4:01",
+        "bpm": 119
     },
     "4HgsPAX3MmMgIT60hJ4W4U": {
         "chest": "hiE",
@@ -117,7 +131,8 @@
         "name": "秒針を噛む",
         "artist": "ずっと真夜中でいいのに。",
         "low": "mid1G#",
-        "duration": "4:20"
+        "duration": "4:20",
+        "bpm": 130
     },
     "3wJHCry960drNlAUGrJLmz": {
         "chest": "hiC",
@@ -125,7 +140,8 @@
         "name": "ただ君に晴れ",
         "artist": "ヨルシカ",
         "low": "mid2D",
-        "duration": "3:18"
+        "duration": "3:18",
+        "bpm": 140
     },
     "1rr2DJOxV0sHXeUXCAz1yf": {
         "chest": "hiA",
@@ -133,7 +149,8 @@
         "name": "春泥棒",
         "artist": "ヨルシカ",
         "low": "mid1F",
-        "duration": "4:50"
+        "duration": "4:50",
+        "bpm": 125
     },
     "53maoOKr6j04iqk6qjdvQN": {
         "chest": "hiC#",
@@ -141,7 +158,8 @@
         "name": "花に亡霊",
         "artist": "ヨルシカ",
         "low": "mid2B",
-        "duration": "4:00"
+        "duration": "4:00",
+        "bpm": 90
     },
     "5j7ixaLeGTGSv4DzKs0pCM": {
         "chest": "hiD",
@@ -149,7 +167,8 @@
         "name": "だから僕は音楽を辞めた",
         "artist": "ヨルシカ",
         "low": "mid2B",
-        "duration": "4:02"
+        "duration": "4:02",
+        "bpm": 125
     },
     "7v8wKvNQQIxkugCFFjrkaO": {
         "chest": "hiC#",
@@ -157,7 +176,8 @@
         "name": "残響散歌",
         "artist": "Aimer",
         "low": "mid1G#",
-        "duration": "3:04"
+        "duration": "3:04",
+        "bpm": 171
     },
     "2Dzzhb1oV5ckgOjWZLraIB": {
         "chest": "mid2B",
@@ -165,7 +185,8 @@
         "name": "Overdose",
         "artist": "なとり",
         "low": "mid1B",
-        "duration": "3:17"
+        "duration": "3:17",
+        "bpm": 118
     },
     "5tcnPaFhcpSLx7ihFwI9DM": {
         "chest": "mid2G",
@@ -173,7 +194,8 @@
         "name": "ココロオドル -original version-",
         "artist": "nobodyknows+",
         "low": "mid1F#",
-        "duration": "4:13"
+        "duration": "4:13",
+        "bpm": 113
     },
     "3KZbMr4Q1D7fqqNXbcqmDz": {
         "chest": "mid2F#",
@@ -181,7 +203,8 @@
         "name": "世界に一つだけの花",
         "artist": "槇原敬之",
         "low": "mid1E",
-        "duration": "4:37"
+        "duration": "4:37",
+        "bpm": 99
     },
     "0a3587n25Xhw098UeEbeJq": {
         "chest": "hiC#",
@@ -189,7 +212,8 @@
         "name": "青と夏",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1D#",
-        "duration": "4:30"
+        "duration": "4:30",
+        "bpm": 185
     },
     "0AShUU6EUvnSWoqGdheDSA": {
         "chest": "hiC",
@@ -197,7 +221,8 @@
         "name": "私は最強",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1D",
-        "duration": "4:17"
+        "duration": "4:17",
+        "bpm": 96
     },
     "78W4mTLIh4qoLu92W4IQhO": {
         "chest": "hiB",
@@ -205,7 +230,8 @@
         "name": "ライラック",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1D",
-        "duration": "4:48"
+        "duration": "4:48",
+        "bpm": 150
     },
     "2yozZfRYHP7Elsymghu5t3": {
         "chest": "hiC",
@@ -213,7 +239,8 @@
         "name": "宿命",
         "artist": "Official髭男dism",
         "low": "mid1F",
-        "duration": "4:40"
+        "duration": "4:40",
+        "bpm": 164
     },
     "6Yrkz3dWqy933CQWQc4Yah": {
         "chest": "hiD",
@@ -221,7 +248,8 @@
         "name": "I LOVE...",
         "artist": "Official髭男dism",
         "low": "mid1E",
-        "duration": "4:42"
+        "duration": "4:42",
+        "bpm": 172
     },
     "49F3htNmwzPKFycPdOrDvf": {
         "chest": "hiC#",
@@ -229,7 +257,8 @@
         "name": "Subtitle",
         "artist": "Official髭男dism",
         "low": "mid1A#",
-        "duration": "5:05"
+        "duration": "5:05",
+        "bpm": 130
     },
     "58dxGXavrcagRqA58fNB0Z": {
         "chest": "hiC",
@@ -237,7 +266,8 @@
         "name": "Pretender",
         "artist": "Official髭男dism",
         "low": "mid1D#",
-        "duration": "5:26"
+        "duration": "5:26",
+        "bpm": 92
     },
     "278JqkBGkjDovOYAwE8TW7": {
         "chest": "hiC",
@@ -245,7 +275,8 @@
         "name": "115万キロのフィルム",
         "artist": "Official髭男dism",
         "low": "mid1A#",
-        "duration": "5:24"
+        "duration": "5:24",
+        "bpm": 97
     },
     "53WuztMfY1VH3rLIm0zApQ": {
         "chest": "hiC",
@@ -253,7 +284,8 @@
         "name": "イエスタデイ",
         "artist": "Official髭男dism",
         "low": "mid1G",
-        "duration": "4:59"
+        "duration": "4:59",
+        "bpm": 130
     },
     "2cxcqKwQtfKq7giphxjzOu": {
         "chest": "hiC#",
@@ -261,7 +293,8 @@
         "name": "晩餐歌 - Bansanka",
         "artist": "tuki.",
         "low": "mid1G#",
-        "duration": "3:35"
+        "duration": "3:35",
+        "bpm": 103
     },
     "3hRRYgBeunE3PTmnzATTS0": {
         "chest": "mid2G#",
@@ -269,7 +302,8 @@
         "name": "天体観測",
         "artist": "BUMP OF CHICKEN",
         "low": "lowG#",
-        "duration": "4:23"
+        "duration": "4:23",
+        "bpm": 165
     },
     "2Gmyw5Vg2X5YW2lM3OC7nD": {
         "chest": "hiB",
@@ -277,7 +311,8 @@
         "name": "春を告げる",
         "artist": "yama",
         "low": "mid2A#",
-        "duration": "3:16"
+        "duration": "3:16",
+        "bpm": 120
     },
     "7CmWXD3w1xOO53AAO4LRVQ": {
         "chest": "hiF",
@@ -285,7 +320,8 @@
         "name": "愛をこめて花束を",
         "artist": "Superfly",
         "low": "mid1G",
-        "duration": "4:55"
+        "duration": "4:55",
+        "bpm": 162
     },
     "2oY9Kx4VarJF5fnQ4L24dW": {
         "chest": "mid2G#",
@@ -293,7 +329,8 @@
         "name": "さよならエレジー",
         "artist": "菅田 将暉",
         "low": "mid1C#",
-        "duration": "4:18"
+        "duration": "4:18",
+        "bpm": 155
     },
     "5SDVaYU4nfaIV0rNSlWSCa": {
         "chest": "hiD",
@@ -301,7 +338,8 @@
         "name": "三日月",
         "artist": "絢香",
         "low": "mid2B",
-        "duration": "4:39"
+        "duration": "4:39",
+        "bpm": 144
     },
     "28NV7pexaSrgQqxize1rav": {
         "chest": "hiB",
@@ -309,7 +347,8 @@
         "name": "ハナミズキ",
         "artist": "一青窈",
         "low": "mid1G#",
-        "duration": "5:23"
+        "duration": "5:23",
+        "bpm": 141
     },
     "23atyJacJVHvB9RHBNhr35": {
         "chest": "mid2G#",
@@ -317,7 +356,8 @@
         "name": "小さな恋のうた",
         "artist": "MONGOL800",
         "low": "mid1A#",
-        "duration": "3:42"
+        "duration": "3:42",
+        "bpm": 116
     },
     "1dsh4buvcBs2u7YtHy29c7": {
         "chest": "mid2G#",
@@ -325,7 +365,8 @@
         "name": "ないものねだり",
         "artist": "KANA-BOON",
         "low": "mid2B",
-        "duration": "4:22"
+        "duration": "4:22",
+        "bpm": 175
     },
     "4GMsLvtWIlSnUzWFiN3vXV": {
         "chest": "hiC#",
@@ -333,7 +374,8 @@
         "name": "スマイル",
         "artist": "森七菜",
         "low": "mid2B",
-        "duration": "2:56"
+        "duration": "2:56",
+        "bpm": 124
     },
     "6aZfTPxaGl5BayfBGqdmC2": {
         "chest": "hiB",
@@ -341,7 +383,8 @@
         "name": "サイレントマジョリティー",
         "artist": "欅坂46",
         "low": "mid1G#",
-        "duration": "4:25"
+        "duration": "4:25",
+        "bpm": 123
     },
     "7D7GCO3CtDT1WDcj2W5VDV": {
         "chest": "hiD",
@@ -349,7 +392,8 @@
         "name": "ギラギラ",
         "artist": "Ado",
         "low": "mid1F#",
-        "duration": "4:36"
+        "duration": "4:36",
+        "bpm": 96
     },
     "7dH0dpi751EoguDDg3xx6J": {
         "chest": "hiA",
@@ -357,7 +401,8 @@
         "name": "ドライフラワー",
         "artist": "優里",
         "low": "mid1G",
-        "duration": "4:45"
+        "duration": "4:45",
+        "bpm": 148
     },
     "45HQhF0BfOqBd4LUS1E94M": {
         "chest": "hiD",
@@ -365,7 +410,8 @@
         "name": "丸ノ内サディスティック",
         "artist": "椎名林檎",
         "low": "mid1D",
-        "duration": "3:55"
+        "duration": "3:55",
+        "bpm": 100
     },
     "3eodTNerNCifLYVL5BHQrp": {
         "chest": "hiA",
@@ -373,7 +419,8 @@
         "name": "友 ～旅立ちの時～",
         "artist": "ゆず",
         "low": "mid1D",
-        "duration": "4:35"
+        "duration": "4:35",
+        "bpm": 146
     },
     "3hlQBw2Z5YQQqIiX9JmLG4": {
         "chest": "hiC",
@@ -381,7 +428,8 @@
         "name": "ありがとう",
         "artist": "いきものがかり",
         "low": "mid1G",
-        "duration": "6:02"
+        "duration": "6:02",
+        "bpm": 79
     },
     "7AIj86wFWqm7X1TZ2hzHwS": {
         "chest": "hiA",
@@ -389,7 +437,8 @@
         "name": "虹",
         "artist": "菅田 将暉",
         "low": "mid1C",
-        "duration": "4:18"
+        "duration": "4:18",
+        "bpm": 144
     },
     "2IL2asrtx7XM1y8fu2RMnR": {
         "chest": "hiC#",
@@ -397,7 +446,8 @@
         "name": "CITRUS",
         "artist": "Da-iCE",
         "low": "mid1F",
-        "duration": "4:08"
+        "duration": "4:08",
+        "bpm": 82
     },
     "45jGOHwYKgsRYbAJ8DR61d": {
         "chest": "hiA#",
@@ -405,7 +455,8 @@
         "name": "ひまわりの約束",
         "artist": "秦 基博",
         "low": "mid1D#",
-        "duration": "5:08"
+        "duration": "5:08",
+        "bpm": 79
     },
     "4feDzcxtXRU8clyOluco5Y": {
         "chest": "hiA#",
@@ -413,7 +464,8 @@
         "name": "どんなときも。",
         "artist": "槇原敬之",
         "low": "mid1F",
-        "duration": "5:04"
+        "duration": "5:04",
+        "bpm": 124
     },
     "12UQIL5yjh7GT7upccCcXk": {
         "chest": "hiD#",
@@ -421,7 +473,8 @@
         "name": "アスノヨゾラ哨戒班",
         "artist": "ゆある",
         "low": "mid1C#",
-        "duration": "2:59"
+        "duration": "2:59",
+        "bpm": 185
     },
     "3A0VFRUxhqpJeOxo0rklqC": {
         "chest": "mid2G#",
@@ -429,7 +482,8 @@
         "name": "友よ 〜 この先もずっと・・・",
         "artist": "ケツメイシ",
         "low": "mid1G",
-        "duration": "5:15"
+        "duration": "5:15",
+        "bpm": 127
     },
     "3dPtXHP0oXQ4HCWHsOA9js": {
         "chest": "hiF",
@@ -437,7 +491,8 @@
         "name": "夜に駆ける",
         "artist": "YOASOBI",
         "low": "mid1G",
-        "duration": "4:21"
+        "duration": "4:21",
+        "bpm": 130
     },
     "0T4AitQuq8IJhWBWuZwkFA": {
         "chest": "hiE",
@@ -445,7 +500,8 @@
         "name": "群青",
         "artist": "YOASOBI",
         "low": "mid1F",
-        "duration": "4:08"
+        "duration": "4:08",
+        "bpm": 135
     },
     "04TshWXkhV1qkqHzf31Hn6": {
         "chest": "hiB",
@@ -453,7 +509,8 @@
         "name": "Lemon",
         "artist": "米津玄師",
         "low": "mid1B",
-        "duration": "4:15"
+        "duration": "4:15",
+        "bpm": 87
     },
     "5Ba7niwvjbRuXThSLgef3U": {
         "chest": "hiA",
@@ -461,7 +518,8 @@
         "name": "あとひとつ",
         "artist": "FUNKY MONKEY BABYS",
         "low": "mid1D",
-        "duration": "5:38"
+        "duration": "5:38",
+        "bpm": 79
     },
     "7dTW21YAJxnAOiUh7Rtu9S": {
         "chest": "hiB",
@@ -469,7 +527,8 @@
         "name": "怪獣の花唄",
         "artist": "Vaundy",
         "low": "mid1D",
-        "duration": "3:44"
+        "duration": "3:44",
+        "bpm": 75
     },
     "5m1i6hq7dmRlp3c1utE48L": {
         "chest": "mid2G",
@@ -477,7 +536,8 @@
         "name": "水平線",
         "artist": "back number",
         "low": "mid1D",
-        "duration": "4:45"
+        "duration": "4:45",
+        "bpm": 146
     },
     "7facNrW6VRW8s3ICZ8G1uW": {
         "chest": "hiA",
@@ -485,7 +545,8 @@
         "name": "RPG",
         "artist": "SEKAI NO OWARI",
         "low": "mid1C#",
-        "duration": "4:51"
+        "duration": "4:51",
+        "bpm": 135
     },
     "364JzOajs76bJymjHm3sVY": {
         "chest": "mid2G#",
@@ -493,7 +554,8 @@
         "name": "ピースサイン - Peace Sign",
         "artist": "米津玄師",
         "low": "mid1D",
-        "duration": "3:58"
+        "duration": "3:58",
+        "bpm": 100
     },
     "5pN2AyWwjzwRoI7gukEVNd": {
         "chest": "mid2G",
@@ -501,7 +563,8 @@
         "name": "さよーならまたいつか！- Sayonara",
         "artist": "米津玄師",
         "low": "mid1D",
-        "duration": "3:21"
+        "duration": "3:21",
+        "bpm": 122
     },
     "6H0PLsSYMzDOqhLgyOlzIj": {
         "chest": "mid2G#",
@@ -509,7 +572,8 @@
         "name": "感電",
         "artist": "米津玄師",
         "low": "mid1A#",
-        "duration": "4:24"
+        "duration": "4:24",
+        "bpm": 103
     },
     "7AqUE5AY514dbzeOAfJRa0": {
         "chest": "hiA",
@@ -517,7 +581,8 @@
         "name": "LOSER",
         "artist": "米津玄師",
         "low": "mid1B",
-        "duration": "4:03"
+        "duration": "4:03",
+        "bpm": 121
     },
     "4JK1kDUdH9RTBQrrSO1QfR": {
         "chest": "hiC",
@@ -525,7 +590,8 @@
         "name": "ベテルギウス",
         "artist": "優里",
         "low": "mid1D",
-        "duration": "3:50"
+        "duration": "3:50",
+        "bpm": 180
     },
     "1ihCiJaXRl4f6Sy4LJov5z": {
         "chest": "hiA",
@@ -533,7 +599,8 @@
         "name": "チェリー",
         "artist": "スピッツ",
         "low": "mid1E",
-        "duration": "4:19"
+        "duration": "4:19",
+        "bpm": 97
     },
     "582HjAJ7coEKSYVirUZyqK": {
         "chest": "mid2G",
@@ -541,7 +608,8 @@
         "name": "Ti Amo",
         "artist": "EXILE",
         "low": "mid2A",
-        "duration": "5:45"
+        "duration": "5:45",
+        "bpm": 89
     },
     "7hDX39mc6Uf6zp8RXYUQ6d": {
         "chest": "mid2G#",
@@ -549,7 +617,8 @@
         "name": "napori",
         "artist": "Vaundy",
         "low": "mid1B",
-        "duration": "3:23"
+        "duration": "3:23",
+        "bpm": 130
     },
     "6ODZT1FGTE2q4two05giS1": {
         "chest": "hiA#",
@@ -557,7 +626,8 @@
         "name": "新宝島",
         "artist": "サカナクション",
         "low": "mid1F",
-        "duration": "5:02"
+        "duration": "5:02",
+        "bpm": 158
     },
     "5RbMlPFL4gVyEHW2lEOuzG": {
         "chest": "mid2G#",
@@ -565,7 +635,8 @@
         "name": "奏(かなで)",
         "artist": "スキマスイッチ",
         "low": "mid1D",
-        "duration": "5:28"
+        "duration": "5:28",
+        "bpm": 150
     },
     "7KExqPOvjFzAI4d49mQxt9": {
         "chest": "hiA#",
@@ -573,7 +644,8 @@
         "name": "ビリミリオン",
         "artist": "優里",
         "low": "mid1D",
-        "duration": "3:46"
+        "duration": "3:46",
+        "bpm": 125
     },
     "3k64vNcgYPkETG7TNgpW4o": {
         "chest": "hiA",
@@ -581,7 +653,8 @@
         "name": "裸の勇者",
         "artist": "Vaundy",
         "low": "mid1G",
-        "duration": "3:21"
+        "duration": "3:21",
+        "bpm": 163
     },
     "55Ww4Pa1iIQMhh0MLMetjo": {
         "chest": "hiB",
@@ -589,7 +662,8 @@
         "name": "まちがいさがし",
         "artist": "菅田 将暉",
         "low": "mid1A",
-        "duration": "3:43"
+        "duration": "3:43",
+        "bpm": 156
     },
     "0ve9Tpz8Yw0I4eXhWsy21o": {
         "chest": "hiD",
@@ -597,7 +671,8 @@
         "name": "ワタリドリ",
         "artist": "[Alexandros]",
         "low": "mid1C#",
-        "duration": "4:08"
+        "duration": "4:08",
+        "bpm": 135
     },
     "5eY7692tmgHB9dbmq6wa2M": {
         "chest": "hiB",
@@ -605,7 +680,8 @@
         "name": "晴る",
         "artist": "ヨルシカ",
         "low": "mid2B",
-        "duration": "4:30"
+        "duration": "4:30",
+        "bpm": 102
     },
     "2jdbZGFp8KVTuk0YxDNL4l": {
         "chest": "hiB",
@@ -613,7 +689,8 @@
         "name": "高嶺の花子さん",
         "artist": "back number",
         "low": "mid1E",
-        "duration": "4:54"
+        "duration": "4:54",
+        "bpm": 138
     },
     "3KnURrjsXA0TDce8N7iOwz": {
         "chest": "hiA",
@@ -621,7 +698,8 @@
         "name": "灰色と青 ( + 菅田将暉 )",
         "artist": "米津玄師;菅田 将暉",
         "low": "mid1B",
-        "duration": "5:32"
+        "duration": "5:32",
+        "bpm": 81
     },
     "6IO5nn84TKArsi3cjpIqaD": {
         "chest": "hiC#",
@@ -629,7 +707,8 @@
         "name": "Mela!",
         "artist": "緑黄色社会",
         "low": "mid1G#",
-        "duration": "4:02"
+        "duration": "4:02",
+        "bpm": 138
     },
     "37EITaEG3UyWedRZrERoaK": {
         "chest": "hiC#",
@@ -637,7 +716,8 @@
         "name": "向日葵",
         "artist": "Ado",
         "low": "mid2A",
-        "duration": "4:19"
+        "duration": "4:19",
+        "bpm": 190
     },
     "0rtlVeGmIPNoz6ztPuM329": {
         "chest": "hiD",
@@ -645,7 +725,8 @@
         "name": "花になって - Be a flower",
         "artist": "緑黄色社会",
         "low": "mid2A",
-        "duration": "3:20"
+        "duration": "3:20",
+        "bpm": 96
     },
     "5P8ZvBQoCrujjNcLAxO3Su": {
         "chest": "hiA",
@@ -653,7 +734,8 @@
         "name": "クリスマスソング",
         "artist": "back number",
         "low": "mid1B",
-        "duration": "5:40"
+        "duration": "5:40",
+        "bpm": 154
     },
     "2VBLFxCUyFp5BfmsZpxcis": {
         "chest": "hiC",
@@ -661,7 +743,8 @@
         "name": "絆ノ奇跡",
         "artist": "Bad Religion",
         "low": "mid1F",
-        "duration": "3:43"
+        "duration": "3:43",
+        "bpm": 170
     },
     "6c5GqVWU3yFDgPkgBB0MGg": {
         "chest": "mid2G",
@@ -669,7 +752,8 @@
         "name": "I'm a mess",
         "artist": "MY FIRST STORY",
         "low": "mid1D",
-        "duration": "4:09"
+        "duration": "4:09",
+        "bpm": 130
     },
     "5skCbGGAnc7Ns18Figz54h": {
         "chest": "mid2E",
@@ -677,7 +761,8 @@
         "name": "Bunny Girl",
         "artist": "AKASAKI",
         "low": "mid1C",
-        "duration": "3:37"
+        "duration": "3:37",
+        "bpm": 160
     },
     "4GqO80eGXA542oTvlYv4LS": {
         "chest": "hiA",
@@ -685,7 +770,8 @@
         "name": "ハッピーエンド",
         "artist": "back number",
         "low": "mid1C#",
-        "duration": "5:14"
+        "duration": "5:14",
+        "bpm": 78
     },
     "0aaZG5azeJei81A2WptwC8": {
         "chest": "hiC#",
@@ -693,7 +779,8 @@
         "name": "拝啓、少年よ",
         "artist": "Hump Back",
         "low": "mid2C#",
-        "duration": "3:08"
+        "duration": "3:08",
+        "bpm": 173
     },
     "4dmruTsdHIOjfOIeaFitXK": {
         "chest": "hiC#",
@@ -701,7 +788,8 @@
         "name": "幾億光年",
         "artist": "Omoinotake",
         "low": "mid1D",
-        "duration": "4:36"
+        "duration": "4:36",
+        "bpm": 96
     },
     "2vOAHp8PBBFYqvQUWSoITY": {
         "chest": "hiB",
@@ -709,7 +797,8 @@
         "name": "インフェルノ",
         "artist": "Mrs. GREEN APPLE",
         "low": "lowG#",
-        "duration": "3:31"
+        "duration": "3:31",
+        "bpm": 93
     },
     "0teqQ0PYqVDyyXJuPOyMhu": {
         "chest": "hiC#",
@@ -717,7 +806,8 @@
         "name": "ケセラセラ",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1C#",
-        "duration": "4:32"
+        "duration": "4:32",
+        "bpm": 115
     },
     "7ikOwlVju9HYUKthPiNHwr": {
         "chest": "hiC#",
@@ -725,7 +815,8 @@
         "name": "ダーリン",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1A#",
-        "duration": "4:38"
+        "duration": "4:38",
+        "bpm": 135
     },
     "4QIKSlDV5YIjr0kqT1Ad32": {
         "chest": "hiB",
@@ -733,7 +824,8 @@
         "name": "ダンスホール",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid2A",
-        "duration": "3:18"
+        "duration": "3:18",
+        "bpm": 110
     },
     "0tnhoHUrHfcLi9hPknUFZ4": {
         "chest": "hiB",
@@ -741,7 +833,8 @@
         "name": "僕のこと",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1C",
-        "duration": "5:21"
+        "duration": "5:21",
+        "bpm": 160
     },
     "6FhWelfRDMFZRtFUU6SIdC": {
         "chest": "hiA#",
@@ -749,7 +842,8 @@
         "name": "怪獣",
         "artist": "サカナクション",
         "low": "mid1F#",
-        "duration": "4:12"
+        "duration": "4:12",
+        "bpm": 90
     },
     "302GeyKmj2vMOmwTZ0Xh76": {
         "chest": "hiC",
@@ -757,7 +851,8 @@
         "name": "渡月橋 ～君 想ふ～",
         "artist": "倉木麻衣",
         "low": "mid1G",
-        "duration": "4:05"
+        "duration": "4:05",
+        "bpm": 94
     },
     "7Ahb4cvhS79BXo09HFQXbE": {
         "chest": "hiA",
@@ -765,7 +860,8 @@
         "name": "WanteD! WanteD!",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1E",
-        "duration": "3:37"
+        "duration": "3:37",
+        "bpm": 160
     },
     "7vBX6cVsCPFSx2C58hpZ4f": {
         "chest": "hiC",
@@ -773,7 +869,8 @@
         "name": "Cry Baby",
         "artist": "Official髭男dism",
         "low": "mid1D#",
-        "duration": "4:00"
+        "duration": "4:00",
+        "bpm": 200
     },
     "6AncLCxf4U7ivJEaqih9zA": {
         "chest": "hiA#",
@@ -781,7 +878,8 @@
         "name": "不可幸力",
         "artist": "Vaundy",
         "low": "mid1A#",
-        "duration": "3:20"
+        "duration": "3:20",
+        "bpm": 94
     },
     "1di1C0QI6Y92yZPYn6XYAZ": {
         "chest": "hiA",
@@ -789,7 +887,8 @@
         "name": "シルエット",
         "artist": "KANA-BOON",
         "low": "mid2A",
-        "duration": "4:00"
+        "duration": "4:00",
+        "bpm": 91
     },
     "2UdvMWk0Z83lMJPbawy2Sm": {
         "chest": "hiA",
@@ -797,7 +896,8 @@
         "name": "ブルーベリー・ナイツ",
         "artist": "マカロニえんぴつ",
         "low": "mid1C",
-        "duration": "4:04"
+        "duration": "4:04",
+        "bpm": 106
     },
     "2SihT7AVMiI2VtaAyVIcnO": {
         "chest": "hiA#",
@@ -805,7 +905,8 @@
         "name": "恋人ごっこ",
         "artist": "マカロニえんぴつ",
         "low": "mid1F",
-        "duration": "3:20"
+        "duration": "3:20",
+        "bpm": 102
     },
     "7CKNIPYunPhupoNZXdi4GS": {
         "chest": "hiC",
@@ -813,7 +914,8 @@
         "name": "愛唄",
         "artist": "GReeeeN",
         "low": "mid1D#",
-        "duration": "3:56"
+        "duration": "3:56",
+        "bpm": 170
     },
     "6LtgrHfq3Q7O9PHcAZxkEH": {
         "chest": "hiA",
@@ -821,7 +923,8 @@
         "name": "栄光の架橋",
         "artist": "ゆず",
         "low": "mid1B",
-        "duration": "5:23"
+        "duration": "5:23",
+        "bpm": 82
     },
     "7ztdl6cnbJgHRdMkKldkts": {
         "chest": "hiA#",
@@ -829,7 +932,8 @@
         "name": "キセキ",
         "artist": "GReeeeN",
         "low": "mid1G",
-        "duration": "4:31"
+        "duration": "4:31",
+        "bpm": 90
     },
     "57zS3lPil2VxdlBLXHu8l2": {
         "chest": "hiA",
@@ -837,7 +941,8 @@
         "name": "クスシキ",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1B",
-        "duration": "3:09"
+        "duration": "3:09",
+        "bpm": 138
     },
     "04AEvGFAxWKyxYxRCUqAdp": {
         "chest": "mid2G",
@@ -845,7 +950,8 @@
         "name": "ノンフィクション",
         "artist": "平井堅",
         "low": "mid1A",
-        "duration": "4:31"
+        "duration": "4:31",
+        "bpm": 79
     },
     "30VCqfe0tfVIYMkHv02xfx": {
         "chest": "hiA#",
@@ -853,7 +959,8 @@
         "name": "demo",
         "artist": "なかねかな。",
         "low": "mid1C#",
-        "duration": "3:53"
+        "duration": "3:53",
+        "bpm": 112
     },
     "3IanNVIcOMlKFr329uhNcA": {
         "chest": "hiB",
@@ -861,7 +968,8 @@
         "name": "ヤングアダルト",
         "artist": "マカロニえんぴつ",
         "low": "mid1C",
-        "duration": "4:18"
+        "duration": "4:18",
+        "bpm": 131
     },
     "5Hu29JT4xtbRUBTZeOAjxW": {
         "chest": "mid2F#",
@@ -869,7 +977,8 @@
         "name": "恋",
         "artist": "星野 源",
         "low": "mid1E",
-        "duration": "4:13"
+        "duration": "4:13",
+        "bpm": 158
     },
     "3Ztjw8utVpcrzms1RrsJvR": {
         "chest": "hiA",
@@ -877,7 +986,8 @@
         "name": "全力少年",
         "artist": "スキマスイッチ",
         "low": "mid1D",
-        "duration": "4:32"
+        "duration": "4:32",
+        "bpm": 134
     },
     "3YML5IHoqWbw9c9vJJvrvM": {
         "chest": "hiB",
@@ -885,7 +995,8 @@
         "name": "Soranji",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1C",
-        "duration": "5:43"
+        "duration": "5:43",
+        "bpm": 156
     },
     "2HovXsvcdJur52BOcYGydz": {
         "chest": "hiC#",
@@ -893,7 +1004,8 @@
         "name": "カタオモイ",
         "artist": "Aimer",
         "low": "mid1G#",
-        "duration": "3:27"
+        "duration": "3:27",
+        "bpm": 97
     },
     "1rN9QoVxw5U7TJkyaUR8C1": {
         "chest": "hiC",
@@ -901,7 +1013,8 @@
         "name": "unravel",
         "artist": "TK from 凛として時雨",
         "low": "mid1A",
-        "duration": "3:58"
+        "duration": "3:58",
+        "bpm": 135
     },
     "19mjCzLuMHZ0Tyn3eI85bo": {
         "chest": "hiA#",
@@ -909,7 +1022,8 @@
         "name": "シャッター",
         "artist": "優里",
         "low": "mid1C",
-        "duration": "4:08"
+        "duration": "4:08",
+        "bpm": 150
     },
     "12usPU2WnqgCHAW1EK2dfd": {
         "chest": "hiA#",
@@ -917,7 +1031,8 @@
         "name": "青のすみか",
         "artist": "キタニタツヤ",
         "low": "lowG#",
-        "duration": "3:16"
+        "duration": "3:16",
+        "bpm": 152
     },
     "0akvgdebTkERlRqNKJZuFy": {
         "chest": "hiB",
@@ -925,7 +1040,8 @@
         "name": "スターマイン",
         "artist": "Da-iCE",
         "low": "mid1C#",
-        "duration": "3:47"
+        "duration": "3:47",
+        "bpm": 132
     },
     "1WdkBwAsdznWw9xM69KmvR": {
         "chest": "hiE",
@@ -933,7 +1049,8 @@
         "name": "ブルーバード",
         "artist": "いきものがかり",
         "low": "mid2A",
-        "duration": "3:38"
+        "duration": "3:38",
+        "bpm": 152
     },
     "5DMEvbg3gUmiR5HIBWdveV": {
         "chest": "hiC#",
@@ -941,7 +1058,8 @@
         "name": "ノーダウト",
         "artist": "Official髭男dism",
         "low": "mid2A",
-        "duration": "3:22"
+        "duration": "3:22",
+        "bpm": 150
     },
     "3P2aSkjcbUYbcYr13EFE8n": {
         "chest": "hiA",
@@ -949,7 +1067,8 @@
         "name": "空も飛べるはず",
         "artist": "スピッツ",
         "low": "mid1G",
-        "duration": "4:31"
+        "duration": "4:31",
+        "bpm": 115
     },
     "0JcI7OdALbpSFkyKoufRYs": {
         "chest": "hiD",
@@ -957,7 +1076,8 @@
         "name": "ロマンチシズム",
         "artist": "Mrs. GREEN APPLE",
         "low": "mid1C",
-        "duration": "3:33"
+        "duration": "3:33",
+        "bpm": 126
     },
     "3JrxNi0sQ1Lnx8eGonp3Ma": {
         "chest": "hiB",
@@ -965,7 +1085,8 @@
         "name": "にじいろ",
         "artist": "絢香",
         "low": "mid1F#",
-        "duration": "3:44"
+        "duration": "3:44",
+        "bpm": 92
     },
     "3jNwPOqdPvQIr5dRT0hzgY": {
         "chest": "hiB",
@@ -973,7 +1094,8 @@
         "name": "タイムパラドックス",
         "artist": "Vaundy",
         "low": "mid1D",
-        "duration": "3:46"
+        "duration": "3:46",
+        "bpm": 82
     },
     "2hXPmiqKdXcbV0L1VKnTDN": {
         "chest": "mid2F#",
@@ -981,7 +1103,8 @@
         "low": "mid1F",
         "name": "最高到達点",
         "artist": "SEKAI NO OWARI",
-        "duration": "3:47"
+        "duration": "3:47",
+        "bpm": 132
     },
     "4XdzCpY4Ekv5SezuuFpBDG": {
         "chest": "hiA",
@@ -989,7 +1112,8 @@
         "low": "mid1A",
         "name": "Dragon Night",
         "artist": "SEKAI NO OWARI",
-        "duration": "3:49"
+        "duration": "3:49",
+        "bpm": 124
     },
     "5kDz0Wrx0UpaVRttDZ4KtI": {
         "chest": "hiA",
@@ -997,7 +1121,8 @@
         "low": "mid1C#",
         "name": "炎と森のカーニバル",
         "artist": "SEKAI NO OWARI",
-        "duration": "4:58"
+        "duration": "4:58",
+        "bpm": 116
     },
     "3hBAYbAECEix9raaTq8S3H": {
         "chest": "hiB",
@@ -1005,7 +1130,8 @@
         "low": "mid1D",
         "name": "ヒロイン",
         "artist": "back number",
-        "duration": "4:29"
+        "duration": "4:29",
+        "bpm": 76
     },
     "6ybLgHBGIxR8R6IIVmaipO": {
         "chest": "mid2G",
@@ -1013,7 +1139,8 @@
         "low": "mid1A",
         "name": "W / X / Y",
         "artist": "Tani Yuuki",
-        "duration": "4:39"
+        "duration": "4:39",
+        "bpm": 104
     },
     "3L7ISJTvKx56uhsF28aJ4p": {
         "chest": "mid2F#",
@@ -1021,7 +1148,8 @@
         "low": "mid1A",
         "name": "きらり",
         "artist": "藤井 風",
-        "duration": "3:47"
+        "duration": "3:47",
+        "bpm": 117
     },
     "5W7Y92LB4jWvu9NeEQ0GZl": {
         "chest": "hiA",
@@ -1029,7 +1157,8 @@
         "low": "mid1B",
         "name": "なんでもないよ、",
         "artist": "マカロニえんぴつ",
-        "duration": "3:39"
+        "duration": "3:39",
+        "bpm": 172
     },
     "1sIIlVrnPhrvmTrHtzM7tV": {
         "chest": "hiD",
@@ -1037,7 +1166,8 @@
         "low": "mid2A",
         "name": "点描の唄",
         "artist": "Mrs. GREEN APPLE;井上苑子",
-        "duration": "5:07"
+        "duration": "5:07",
+        "bpm": 152
     },
     "0csHMdBheTvp9Oay1hM1WF": {
         "chest": "hiC",
@@ -1045,15 +1175,8 @@
         "low": "mid1D",
         "name": "Magic",
         "artist": "Mrs. GREEN APPLE",
-        "duration": "4:23"
-    },
-    "4g066xFUp3cTUuTfOCPytT": {
-        "chest": "mid2G#",
-        "falsetto": "---",
-        "low": "mid1C#",
-        "name": "3月9日",
-        "artist": "レミオロメン",
-        "duration": "4:25"
+        "duration": "4:23",
+        "bpm": 118
     },
     "4ZIr1NSxVihtHcD6EnG65f": {
         "chest": "hiC#",
@@ -1077,7 +1200,8 @@
         "low": "mid1B",
         "artist": "レミオロメン",
         "name": "粉雪",
-        "duration": "5:21"
+        "duration": "5:21",
+        "bpm": 82
     },
     "6vg9UGXRVL4YKNVqVMmOKF": {
         "chest": "mid2F#",
@@ -1085,7 +1209,8 @@
         "low": "mid1E",
         "artist": "RADWIMPS",
         "name": "正解",
-        "duration": "5:58"
+        "duration": "5:58",
+        "bpm": 81
     },
     "7sO2NML7SulscK8RR27uUf": {
         "chest": "hiB",
@@ -1093,7 +1218,8 @@
         "low": "mid1A#",
         "artist": "Mrs. GREEN APPLE",
         "name": "天国",
-        "duration": "5:23"
+        "duration": "5:23",
+        "bpm": 120
     },
     "2tlOVDJ3lQsUxz22vPJ4c4": {
         "chest": "hihiD#",
@@ -1101,7 +1227,8 @@
         "low": "mid1A#",
         "artist": "Ado",
         "name": "唱",
-        "duration": "3:09"
+        "duration": "3:09",
+        "bpm": 132
     },
     "1oFqKeepmT5S8BCGqJl7Ar": {
         "chest": "---",
@@ -1109,7 +1236,8 @@
         "low": "---",
         "artist": "アイナ・ジ・エンド",
         "name": "革命道中 - On The Way",
-        "duration": "3:17"
+        "duration": "3:17",
+        "bpm": 93
     },
     "6glcoO077gTGhgdVI9X5wA": {
         "chest": "hiA#",
@@ -1117,7 +1245,8 @@
         "low": "mid1C",
         "artist": "マカロニえんぴつ",
         "name": "ミスター・ブルースカイ",
-        "duration": "3:53"
+        "duration": "3:53",
+        "bpm": 118
     },
     "6IEqiEgTQn4FwE0seKXFZO": {
         "chest": "mid2G#",
@@ -1125,7 +1254,8 @@
         "low": "mid1D",
         "artist": "sumika",
         "name": "Lovers",
-        "duration": "4:10"
+        "duration": "4:10",
+        "bpm": 114
     },
     "5YP52gnoypy9H1jg5RIwUW": {
         "chest": "hiB",
@@ -1133,7 +1263,8 @@
         "low": "mid1F#",
         "artist": "スピッツ",
         "name": "ロビンソン",
-        "duration": "4:21"
+        "duration": "4:21",
+        "bpm": 111
     },
     "3Tw2WaAaeRj0YKtTUogJVz": {
         "chest": "hiC#",
@@ -1141,7 +1272,8 @@
         "low": "mid2A",
         "artist": "AKB48",
         "name": "恋するフォーチュンクッキー",
-        "duration": "4:44"
+        "duration": "4:44",
+        "bpm": 122
     },
     "5a9awnr002AVXUSVu2CC46": {
         "chest": "hiA",
@@ -1149,7 +1281,8 @@
         "low": "mid1D",
         "artist": "マカロニえんぴつ",
         "name": "レモンパイ",
-        "duration": "3:37"
+        "duration": "3:37",
+        "bpm": 102
     },
     "1BMYkyKXS6UfnJteWN7nSD": {
         "chest": "hiC",
@@ -1157,7 +1290,8 @@
         "low": "mid1G",
         "artist": "つじあやの",
         "name": "風になる",
-        "duration": "4:36"
+        "duration": "4:36",
+        "bpm": 135
     },
     "4NmzMLuyfuF9UpzjbhSiwl": {
         "chest": "hiC",
@@ -1165,7 +1299,8 @@
         "low": "mid1F",
         "artist": "いきものがかり",
         "name": "YELL",
-        "duration": "5:56"
+        "duration": "5:56",
+        "bpm": 150
     },
     "0vE1WglBbhmd5wDO49lcih": {
         "chest": "hiC",
@@ -1173,7 +1308,8 @@
         "low": "mid1B",
         "artist": "Mrs. GREEN APPLE",
         "name": "lulu.",
-        "duration": "4:30"
+        "duration": "4:30",
+        "bpm": 88
     },
     "19kF4PkH9RmZlMSEOhSgdQ": {
         "chest": "hiC#",
@@ -1181,7 +1317,8 @@
         "low": "mid1D#",
         "artist": "Mrs. GREEN APPLE",
         "name": "lovin'",
-        "duration": "2:35"
+        "duration": "2:35",
+        "bpm": 123
     },
     "4ER5mnbHqsvggEcoVMdFSk": {
         "chest": "hiA#",
@@ -1189,7 +1326,8 @@
         "low": "mid1D#",
         "artist": "Mrs. GREEN APPLE",
         "name": "ANTENNA",
-        "duration": "4:30"
+        "duration": "4:30",
+        "bpm": 146
     },
     "7HneEBTvTra2CRYsxgMOAi": {
         "chest": "hiE",
@@ -1197,7 +1335,8 @@
         "low": "mid1G",
         "artist": "YOASOBI",
         "name": "ハルジオン",
-        "duration": "3:18"
+        "duration": "3:18",
+        "bpm": 130
     },
     "06XQvnJb53SUYmlWIhUXUi": {
         "chest": "hiD#",
@@ -1205,7 +1344,8 @@
         "low": "mid1F#",
         "artist": "YOASOBI",
         "name": "怪物",
-        "duration": "3:26"
+        "duration": "3:26",
+        "bpm": 170
     },
     "0JAQpusQK6R7w07s0UgcU3": {
         "chest": "mid2G#",
@@ -1213,7 +1353,8 @@
         "low": "mid1C",
         "artist": "平井堅",
         "name": "瞳をとじて",
-        "duration": "5:43"
+        "duration": "5:43",
+        "bpm": 141
     },
     "5tuj09zUnvIb7KEsUpWWfq": {
         "chest": "mid2G",
@@ -1221,7 +1362,8 @@
         "low": "mid1G",
         "artist": "大森元貴",
         "name": "French",
-        "duration": "3:28"
+        "duration": "3:28",
+        "bpm": 110
     },
     "00Q3uYmFKFVYTRjbsnUq7H": {
         "chest": "hiB",
@@ -1229,7 +1371,8 @@
         "low": "mid1A#",
         "artist": "Da-iCE",
         "name": "I wonder",
-        "duration": "2:37"
+        "duration": "2:37",
+        "bpm": 125
     },
     "5iF0Yf9gju6ERpAch08JsC": {
         "chest": "hiB",
@@ -1237,7 +1380,8 @@
         "low": "mid1A#",
         "artist": "King Gnu",
         "name": "白日",
-        "duration": "4:34"
+        "duration": "4:34",
+        "bpm": 93
     },
     "31rf3jLBMfnrqLuTPrcxM5": {
         "chest": "mid2G",
@@ -1245,7 +1389,8 @@
         "low": "mid1C",
         "artist": "レミオロメン",
         "name": "3月9日",
-        "duration": "4:25"
+        "duration": "4:25",
+        "bpm": 153
     },
     "1Vqs0lXeJafYZz2sxnfB3V": {
         "chest": "hiC#",
@@ -1253,7 +1398,8 @@
         "low": "mid1E",
         "artist": "Saucy Dog",
         "name": "シンデレラボーイ",
-        "duration": "3:54"
+        "duration": "3:54",
+        "bpm": 108
     },
     "0v3iUTe5rskRsxbUhboRlT": {
         "chest": "hiC",
@@ -1261,7 +1407,8 @@
         "low": "mid1D",
         "artist": "Saucy Dog",
         "name": "いつか",
-        "duration": "4:34"
+        "duration": "4:34",
+        "bpm": 80
     },
     "45LUKiex0D78VuhP3Oz6mG": {
         "chest": "mid2F",
@@ -1269,7 +1416,8 @@
         "low": "mid1A",
         "artist": "女王蜂",
         "name": "メフィスト",
-        "duration": "3:47"
+        "duration": "3:47",
+        "bpm": 150
     },
     "6LDd1eGJTtMi19cX7pYuYy": {
         "chest": "mid2F#",
@@ -1277,7 +1425,8 @@
         "low": "mid1B",
         "artist": "コブクロ",
         "name": "赤い糸",
-        "duration": "6:58"
+        "duration": "6:58",
+        "bpm": 78
     },
     "1XeOqgzh2fZhmgxnmyiIJ8": {
         "chest": "hiG",
@@ -1285,7 +1434,8 @@
         "low": "mid1G",
         "artist": "ずっと真夜中でいいのに。",
         "name": "残機",
-        "duration": "3:50"
+        "duration": "3:50",
+        "bpm": 141
     },
     "3FUCuf498nFHJXFYR1V9Bd": {
         "chest": "hiD",
@@ -1293,7 +1443,8 @@
         "low": "mid1F",
         "artist": "YOASOBI",
         "name": "三原色",
-        "duration": "3:44"
+        "duration": "3:44",
+        "bpm": 128
     },
     "2L2Lb5GjBpKHMSjmofiRnf": {
         "chest": "hiA",
@@ -1301,7 +1452,8 @@
         "low": "mid1A",
         "artist": "Mrs. GREEN APPLE",
         "name": "嘘じゃないよ",
-        "duration": "4:45"
+        "duration": "4:45",
+        "bpm": 77
     },
     "7sditHCsoFw3nHnjFv1BHV": {
         "chest": "hiC",
@@ -1309,7 +1461,8 @@
         "low": "lowG#",
         "artist": "Mrs. GREEN APPLE",
         "name": "ナハトムジーク",
-        "duration": "4:22"
+        "duration": "4:22",
+        "bpm": 146
     },
     "6k90ibcH1z8Mx9684nfuLW": {
         "chest": "hiF",
@@ -1317,7 +1470,8 @@
         "low": "mid2A#",
         "artist": "ずっと真夜中でいいのに。",
         "name": "お勉強しといてよ",
-        "duration": "4:40"
+        "duration": "4:40",
+        "bpm": 132
     },
     "2VIK6jaaKghS4QPHr6sAkv": {
         "chest": "hiF",
@@ -1325,6 +1479,43 @@
         "low": "mid2B",
         "artist": "ずっと真夜中でいいのに。",
         "name": "あいつら全員同窓会",
-        "duration": "4:14"
+        "duration": "4:14",
+        "bpm": 131
+    },
+    "6qB3lZIfnDC8TE2245NDtO": {
+        "chest": "mid2G",
+        "falsetto": "hiB",
+        "low": "mid1D",
+        "artist": "サカナクション",
+        "name": "夜の踊り子",
+        "duration": "5:02",
+        "bpm": 134
+    },
+    "7hIfpcdUZcyCKHYy8gp49E": {
+        "chest": "mid2G#",
+        "falsetto": "hiC",
+        "low": "mid1F",
+        "artist": "back number",
+        "name": "瞬き",
+        "duration": "5:25",
+        "bpm": 120
+    },
+    "5hrS405iyU1OLU4BFwGWGY": {
+        "chest": "hiA#",
+        "falsetto": "---",
+        "low": "mid1C",
+        "artist": "Mr.Children",
+        "name": "名もなき詩",
+        "duration": "5:28",
+        "bpm": 126
+    },
+    "3Kihz14e1cNkpl5PiJOiB7": {
+        "chest": "hiA",
+        "falsetto": "---",
+        "low": "mid1E",
+        "artist": "WANDS",
+        "name": "世界が終るまでは",
+        "duration": "5:13",
+        "bpm": 104
     }
 }

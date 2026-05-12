@@ -1,6 +1,9 @@
 // 設定：JSONファイルのパス
 const DATA_FILE = 'karaoke_data.json';
 
+// 全楽曲データを保持するグローバル変数（検索高速化のため）
+let allSongs = [];
+
 // 音階計算ロジック
 function calculateScore(pitchText) {
     if (!pitchText || pitchText === "---") return -1;
@@ -15,21 +18,15 @@ function calculateScore(pitchText) {
     return -1;
 }
 
+// データの読み込みと初期化
 async function loadKaraokeData() {
-    const listContainer = document.getElementById('rankingList');
-    const missingContainer = document.getElementById('missingListContainer');
-    const missingList = document.getElementById('missingList');
-
     try {
-        // ★ここが最大のポイント！★
-        // URLの末尾に「?t=現在時刻」をつけることで、強制的に最新データを取得する
         const bustCache = '?t=' + new Date().getTime();
         const response = await fetch(DATA_FILE + bustCache);
-        
         if (!response.ok) throw new Error("ファイルが見つかりません");
         const json = await response.json();
 
-        // オブジェクトを配列に変換 & スコア計算
+        // 1. データの整形とスコア計算
         let songs = Object.values(json).map(song => {
             const chestScore = calculateScore(song.chest);
             const falsettoScore = calculateScore(song.falsetto);
@@ -38,120 +35,152 @@ async function loadKaraokeData() {
             if (falsettoScore > chestScore) {
                 maxScore = falsettoScore;
                 displayPitch = song.falsetto;
-                type = "Falsetto"; // デザインに合わせて英語表記
+                type = "Falsetto"; 
             } else {
                 maxScore = chestScore;
                 displayPitch = song.chest;
-                type = "Chest"; // デザインに合わせて英語表記
+                type = "Chest"; 
             }
-
             return { ...song, maxScore, displayPitch, type };
         });
 
-        // ソート
-        // 2. ソート
+        // 2. 総合ランキング順にソート
         songs.sort((a, b) => b.maxScore - a.maxScore);
 
-        // 3. 描画（★同率順位ロジックの実装★）
-        listContainer.innerHTML = '';
-        
-        let displayRank = 1; // 画面に表示する順位
-        let actualRank = 1;  // 実際の件数カウント（1, 2, 3...）
-
+        // 3. 順位の計算（同率順位対応）
+        let displayRank = 1;
+        let actualRank = 1;
         songs.forEach((song, index) => {
-        if (song.maxScore <= 0) return; // データなしはスキップ
+            if (song.maxScore > 0) {
+                if (index > 0 && song.maxScore < songs[index - 1].maxScore) {
+                    displayRank = actualRank;
+                }
+                song.displayRank = displayRank;
+                actualRank++;
+            }
+        });
 
-        // (同率順位ロジックなどはそのまま...)
-        if (index > 0) {
-             const prevSong = songs[index - 1];
-             if (song.maxScore < prevSong.maxScore) displayRank = actualRank;
+        // 検索用に全データを保存
+        allSongs = songs;
+
+        // 4. 初回描画と検索機能のセットアップ
+        renderSongs(allSongs);
+        setupSearch();
+
+    } catch (error) {
+        document.getElementById('rankingList').innerHTML = `<p style="color:#ff5555; text-align:center;">エラー: ${error.message}</p>`;
+    }
+}
+
+// --- 画面への描画処理（爆速化） ---
+function renderSongs(songsToRender) {
+    const listContainer = document.getElementById('rankingList');
+    const missingContainer = document.getElementById('missingListContainer');
+    const missingList = document.getElementById('missingList');
+    
+    listContainer.innerHTML = '';
+    missingList.innerHTML = '';
+    
+    let hasMissing = false;
+    
+    // まとめてDOMに追加するためのFragment（描画負荷を最小限にする裏技）
+    const fragment = document.createDocumentFragment();
+
+    songsToRender.forEach((song) => {
+        // データなしの曲
+        if (song.maxScore <= 0) {
+            const li = document.createElement('li');
+            li.textContent = `${song.name} / ${song.artist}`;
+            missingList.appendChild(li);
+            hasMissing = true;
+            return;
         }
 
         const card = document.createElement('div');
         card.className = 'card';
-        card.style.animation = `fadeIn 0.5s ease forwards ${actualRank * 0.05}s`;
-        card.style.opacity = '0';
-        
-        // ★クリックイベントを追加！
+        card.style.cursor = "pointer";
         card.addEventListener('click', () => openModal(song));
-        card.style.cursor = "pointer"; // クリックできる感すソルにする
+
+        // BPMのHTML（0の場合は表示しない）
+        const bpmHtml = (song.bpm && song.bpm > 0) 
+            ? `<div class="bpm-badge"><span class="bpm-label">BPM</span><span class="bpm-val">${song.bpm}</span></div>` 
+            : '';
 
         card.innerHTML = `
-            <div class="rank">${displayRank}</div>
+            <div class="rank">${song.displayRank}</div>
             <div class="info">
                 <div class="title">${song.name}</div>
                 <div class="artist">${song.artist}</div>
             </div>
-            <div class="pitch-badge">
-                <span class="pitch-val">${song.displayPitch}</span>
-                <span class="pitch-type">${song.type}</span>
+            <div class="badges">
+                ${bpmHtml}
+                <div class="pitch-badge">
+                    <span class="pitch-val">${song.displayPitch}</span>
+                    <span class="pitch-type">${song.type}</span>
+                </div>
             </div>
         `;
-        listContainer.appendChild(card);
-        actualRank++;
+        fragment.appendChild(card);
     });
 
-        setupSearch();
-        
-        // CSSアニメーション用のキーフレームを動的に追加
-        const styleSheet = document.createElement("style");
-        styleSheet.innerText = `@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }`;
-        document.head.appendChild(styleSheet);
-
-    } catch (error) {
-        listContainer.innerHTML = `<p style="color:#ff5555; text-align:center;">エラー: ${error.message}</p>`;
-    }
+    listContainer.appendChild(fragment);
+    missingContainer.style.display = hasMissing ? 'block' : 'none';
 }
 
+
+// --- 検索機能（日本語入力対応・カクつき防止） ---
 function setupSearch() {
     const input = document.getElementById('searchInput');
-	const clearBtn = document.getElementById('clearBtn');
-    // 入力イベント
+    const clearBtn = document.getElementById('clearBtn');
+    
+    let searchTimeout = null;
+
     input.addEventListener('input', (e) => {
-        const term = e.target.value.toLowerCase();
-        
-        // ★文字があればクリアボタンを表示
+        const term = e.target.value.toLowerCase().trim();
         clearBtn.style.display = term.length > 0 ? 'flex' : 'none';
 
-        const cards = document.querySelectorAll('.card');
-        cards.forEach(card => {
-            const title = card.querySelector('.title').textContent.toLowerCase();
-            const artist = card.querySelector('.artist').textContent.toLowerCase();
-            if (title.includes(term) || artist.includes(term)) {
-                card.style.display = 'flex';
+        // ★デバウンス処理: 連続入力中は検索を待機し、入力が止まってから0.3秒後に検索する
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            if (term === '') {
+                renderSongs(allSongs);
             } else {
-                card.style.display = 'none';
+                // DOMではなく、データ配列から直接フィルタリングするから超高速
+                const filtered = allSongs.filter(song => {
+                    const title = (song.name || '').toLowerCase();
+                    const artist = (song.artist || '').toLowerCase();
+                    return title.includes(term) || artist.includes(term);
+                });
+                renderSongs(filtered);
             }
-        });
+        }, 300); // 300ミリ秒待機
     });
 
-    // ★クリアボタンのクリックイベント
     clearBtn.addEventListener('click', () => {
-        input.value = ''; // 文字を消す
-        input.dispatchEvent(new Event('input')); // 入力イベントを強制発火させてリストを全表示に戻す
-        input.focus(); // 入力欄にフォーカスを戻す
+        input.value = '';
+        clearBtn.style.display = 'none';
+        renderSongs(allSongs);
+        input.focus();
     });
 }
 
-// モーダル要素の取得
+
+// --- モーダル（詳細画面）制御 ---
 const modal = document.getElementById("songModal");
 const closeBtn = document.querySelector(".close-btn");
 
-// 閉じるボタンの処理
 closeBtn.onclick = () => {
     modal.style.display = "none";
-    document.body.style.overflow = ''; // ★追加：スクロールロック解除
+    document.body.style.overflow = '';
 };
-// 外側クリックで閉じる処理
 window.onclick = (event) => {
     if (event.target == modal) {
         modal.style.display = "none";
-        document.body.style.overflow = ''; // ★追加：スクロールロック解除
+        document.body.style.overflow = '';
     }
 };
 
 function openModal(song) {
-    // テキスト情報をセット
     document.getElementById("modalTitle").textContent = song.name;
     document.getElementById("modalArtist").textContent = song.artist;
     document.getElementById("modalDuration").textContent = song.duration || "--:--";
@@ -160,51 +189,39 @@ function openModal(song) {
     document.getElementById("modalFalsetto").textContent = song.falsetto;
     document.getElementById("modalLow").textContent = song.low || "---";
 
-    // --- 音域バーの計算 ---
-    // 基準：lowA(下限) ～ hihiA(上限) くらいを全体の幅(100%)とする
-    // 音階スコア: lowA=0, mid1C=12, hiC=36, hihiA=48 くらい
-    
-    // スコア計算
-    const lowScore = calculateScore(song.low); // 最低音
-    const highScore = song.maxScore;           // 最高音(地声/裏声の高い方)
+    const lowScore = calculateScore(song.low);
+    const highScore = song.maxScore;
 
-    // データが不十分な場合のフォールバック
     if (lowScore === -1 || highScore === -1) {
         document.getElementById("rangeBar").style.width = "0%";
         modal.style.display = "flex";
+        document.body.style.overflow = 'hidden';
         return;
     }
 
-    // 表示用の全体スケール設定 (lowG ～ hihiC)
-    const scaleMin = 0; // lowAあたり
-    const scaleMax = 48; // hihiAあたり
+    const scaleMin = 0;
+    const scaleMax = 48;
     const totalRange = scaleMax - scaleMin;
 
-    // 左端の位置 (%) = (曲の最低音 - スケール最低音) / 全体幅
     let leftPercent = ((lowScore - scaleMin) / totalRange) * 100;
-    
-    // バーの長さ (%) = (曲の最高音 - 曲の最低音) / 全体幅
     let widthPercent = ((highScore - lowScore) / totalRange) * 100;
 
-    // はみ出し防止
     if (leftPercent < 0) leftPercent = 0;
     if (leftPercent + widthPercent > 100) widthPercent = 100 - leftPercent;
 
-    // スタイル適用
     const bar = document.getElementById("rangeBar");
     bar.style.left = `${leftPercent}%`;
     bar.style.width = `${widthPercent}%`;
     
-    // 裏声が最高音の場合は色を変える演出（オプション）
     if (song.type === "Falsetto") {
-        bar.style.background = "linear-gradient(90deg, #1DB954 60%, #4facfe 100%)"; // 青っぽく
+        bar.style.background = "linear-gradient(90deg, #1DB954 60%, #4facfe 100%)";
     } else {
-        bar.style.background = "linear-gradient(90deg, #1DB954, #1ed760)"; // 緑
+        bar.style.background = "linear-gradient(90deg, #1DB954, #1ed760)";
     }
 
-    // 表示
     modal.style.display = "flex";
-	document.body.style.overflow = 'hidden'; // ★追加：背景のスクロールを止める
+    document.body.style.overflow = 'hidden';
 }
 
+// 実行
 loadKaraokeData();
